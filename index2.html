@@ -1,30 +1,114 @@
+<!-- Olá, como vai?
+
+Agora irei apresentar todo meu código para meu site! -->
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jennifer Peixto</title>
+    <title>Jennifer Peixoto</title>
+    <!-- Styles do CSS -->
+    <link rel="stylesheet" href="./css/index2.css">
+    <!-- Agora irei colocar os CDN do Bootstrap! -->
     <link  rel="stylesheet"  href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"  integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"  crossorigin="anonymous">
-
+    <!-- Link do Font Awesome para ícones -->
+    <script src="https://use.fontawesome.com/your-embed-code.js"></script> <!-- TODO: Place your Font Awesome embed code  -->
 </head>
 <body>
-    <!-- menu -->
-    <head>
-        <nav></nav>
-    </head>
     
-    <!-- TOPO -->
-            <!-- LADO ESQUERDO -->
-        <div class="row">
-            <div class="col-md-12" style="background-color:red">Jennifer</div>
+    <!-- Cabeçalho do site -->
+    <head>
+        <div class="menu row">
+            <!-- Logo do menu -->
+            <div class="col-md-4 logo-menu">
+                <a href="#" class="logo-menu"><img src="./src/img/logo/LOGO-100X .png" alt="logo" width="80px"></a>
+            </div>
+            <!-- Menu de links -->
+            <div class="col-md-4 links-menu">
+                <nav class="main-menu">
+                    <ul>
+                        <li><a href="#" class="sobre-link">Sobre mim</a></li>
+                        <li><a href="#" class="servicos-link">Serviços</a></li>
+                        <li><a href="#" class="portfolio-link">Portfólio</a></li>
+                    </ul>
+                </nav>
+            </div>
 
-            <!-- LADO DIREITO -->
-            <div class="col-md-3" style="background-color:pink">Yury</div>
+            <!-- Botão de contato do Menu -->
+            <div class="col-md-4 contato-menu ">
+                <a href="#" class="contato-link float-end">Entrar em Contato</a>
+            </div>
         </div>
-</body>
+        
+    </head>
 
-<script  src="https://code.jquery.com/jquery-3.3.1.slim.min.js"  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"  crossorigin="anonymous"></script>
-<script  src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"  integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"  crossorigin="anonymous"></script>
-<script  src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"  integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"  crossorigin="anonymous"></script>
+    <!-- Topo da página. Seção antes da primeira dobra -->
+    <section class="topo-site">
+        <div class="row">
+            <!-- lado esquerdo / informações sobre minha carreira -->
+            <div class="col-md-6 apresentacao">
+                <p><span style="color:var(--azul-claro)">Hello,</span> eu sou<br>
+                    <h1>Jennifer Peixoto</h1><br>
+                    <h2>Designer UX/UI, Web e Gráfico</h2>
+                </p>
+
+                <p class="experiencia_text">Mais de 2 anos de experiência como Designer Digital, e dentro de área de Marketing. Busco sempre evoluir e entregar o melhor!</p>
+                <div class="buttons">
+                    <a href="#" class="btn_contato-topo">Entrar em contato</a>
+                    <a href="#" class="btn_cv">Baixar CV</a>
+                </div>
+                <!-- Icones das minhas mídias -->
+                <div class="midias">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+                </div>
+            </div>
+
+            <!-- lado direito / Minha foto de apresentação -->
+            <div class="col-md-6">
+                <img src="./src/img/jennifer.jpg" alt="Jennifer Peixoto, Designer Digital" height="auto" width="100px">
+            </div>
+        </div>
+    </section>
+
+    <!-- O resumo de minha jornada e experiencia -->
+    <section id="sobre-mim">
+        <div class="row">
+            <div class="col-md-12 minha-jornada">
+                <p>Sobre mim</p>
+                <h2>Minha Jornada</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit laboriosam quos, numquam illo quo accusamus labore voluptatibus odit natus maiores repellendus est excepturi culpa quidem quibusdam quaerat aperiam debitis? Quidem.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Todos os serviços que presto como Designer -->
+    <section id="servicos">
+        <p>Meus Serviços</p>
+        <h2>O que faço</h2>
+        <div class="row">
+            <div class="col-md-4 ux-ui">Designer UX/UI</div>
+            <div class="col-md-4 web-designer">Designer Web</div>
+            <div class="col-md-4 designer-grafico">Designer Gráfico</div>
+        </div>
+    </section>
+
+    <!-- Todos projetos que desenvolvi na minha carreira. Meu portfólio -->
+    <section id="portfolio">
+        <div class="row">
+            <div class="col-md-12 projetos">
+                <p>Portfólio</p>
+                <h2>Meus Projetos</h2>
+            </div>
+            <div class="col-md-12">Carrousel de imagem dos projetos</div>
+        </div>
+        <button>Botão para ai ao portfólio</button>
+    </section>
+
+    <section class="form-contato">
+        <form action=""></form>
+    </section>
+</body>
 </html>

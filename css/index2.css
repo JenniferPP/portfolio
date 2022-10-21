@@ -1,0 +1,129 @@
+/* ITENS GLOBAIS/GERAIS DO SITE */
+    /* Fonte do site */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;1,300&display=swap');
+    /* Cores do site */
+body{
+    margin: 0;
+    padding: 0;
+}
+
+    :root {
+    --rosa-escuro: #9C7184;
+    --rosa-claro: #D97F81;
+    --azul-escuro: #7392A6;
+    --azul-claro:#478CA2;
+    --preto: #272727;
+  }
+
+
+/*ESTILIZAÇÃO DO MENU DE NAVEGAÇÃO */
+.menu{
+    font-family: 'Poppins', sans-serif;
+    background-color: #272727;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 600;
+    color:white;
+    padding: 20px 50px;
+}
+.main-menu ul{
+    list-style: none;
+}
+.main-menu ul li{
+    display: inline;
+}
+.main-menu ul li a{
+    color: white;
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px;
+    transition: 0.3s;
+}
+.main-menu ul li a:hover{
+    color: var(--rosa-escuro);
+}
+    /* Botão de contato no menu */
+.contato-link{
+    background-color: var(--rosa-claro);
+    border-radius: 50px;
+    padding: 10px 20px;
+    color: white;
+    transition: all 0.3s ;
+}
+.contato-link:hover{
+    background-color: var(--rosa-escuro);
+    text-decoration: none;
+    color: white;
+}
+
+/* ESTILIZAÇÃO DO TOPO DO SITE */
+.topo-site{
+    background-color: var(--preto);
+    color: white;
+    padding: 50px 50px;
+    font-family: 'Poppins', sans-serif;
+}
+    /* Heading line e texto de apresentação */
+.apresentacao{
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 38px;
+}
+.apresentacao h1{
+    font-weight: 500;
+    font-size: 85px;
+    line-height: 105px;
+    color: var(--azul-claro);
+    margin:-20px 0 -30px 0;
+}
+.apresentacao h2{
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 38px;
+    margin-bottom: 70px;
+}
+
+.apresentacao .experiencia_text{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    padding-right: 90px;
+}
+    /* Botoes de ação do topo */
+.buttons{
+    margin-top: 40px;
+}
+.btn_contato-topo{
+    background-color: var(--rosa-claro);
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 50px;
+    transition: all 0.3s;
+}
+.btn_cv{
+    padding: 10px 20px;
+    color: var(--rosa-claro);
+    font-size: 18px;
+    margin-left: 20px;
+    border-radius: 50px;
+    border: solid 1px #D97F81;
+    transition: all 0.3s;
+}
+.btn_contato-topo:hover, .btn_cv:hover{
+    background-color: var(--rosa-escuro);
+    color: white;
+    text-decoration: none;
+}
+    /* Minhas midias sociais */
+.midias{
+    margin-top: 45px;
+}
+.midias svg{
+    width: 50px;
+    color: var(--preto);
+    background-color: var(--rosa-escuro);
+    padding: 10px;
+    border-radius: 10px;
+}
