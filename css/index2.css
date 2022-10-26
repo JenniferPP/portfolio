@@ -2,10 +2,6 @@
     /* Fonte do site */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;1,300&display=swap');
     /* Cores do site */
-body{
-    margin: 0;
-    padding: 0;
-}
 
     :root {
     --rosa-escuro: #9C7184;
@@ -13,6 +9,10 @@ body{
     --azul-escuro: #7392A6;
     --azul-claro:#478CA2;
     --preto: #272727;
+  }
+
+  .row{
+    width: 100%;
   }
 
 
@@ -25,7 +25,14 @@ body{
     font-size: 18px;
     font-weight: 600;
     color:white;
-    padding: 20px 50px;
+    padding: 60px 0;
+    width: 101%;
+}
+.links-menu{
+    text-align: center;
+}
+.logo-menu{
+    text-align: center;
 }
 .main-menu ul{
     list-style: none;
@@ -37,7 +44,7 @@ body{
     color: white;
     display: inline-block;
     text-decoration: none;
-    padding: 10px;
+    padding: 10px 50px;
     transition: 0.3s;
 }
 .main-menu ul li a:hover{
@@ -83,12 +90,11 @@ body{
     line-height: 38px;
     margin-bottom: 70px;
 }
-
 .apresentacao .experiencia_text{
     font-weight: 500;
     font-size: 20px;
     line-height: 30px;
-    padding-right: 90px;
+    padding-right: 150px;
 }
     /* Botoes de ação do topo */
 .buttons{
@@ -126,4 +132,80 @@ body{
     background-color: var(--rosa-escuro);
     padding: 10px;
     border-radius: 10px;
+}
+
+/* ESTILIZAÇÃO DA SEÇÃO "SOBRE MIM" */
+.minha-jornada{
+    text-align: center;
+    font-family: Poppins;
+    margin-top: 80px;
+}
+.minha-jornada p{
+    color: var(--azul-claro);
+    font-size: 25px;
+}
+.minha-jornada h2{
+    color: var(--preto);
+    font-size: 50px;
+    margin-top: -20px;
+}
+.minha-jornada .sobre-txt{
+    color: var(--preto);
+    font-size: 20px;
+    padding: 0 50px;
+    margin-top: 50px;
+}
+.experiencia-anos{
+    text-align: center;
+    margin-top: 50px;
+    align-items: center;
+    justify-content: center;
+}
+.experiencia-anos .anos-trabalho p , .experiencia-anos .quant-projetos p{
+    color: var(--preto);
+
+}
+.experiencia-anos .anos-trabalho, .experiencia-anos .quant-projetos{
+    align-items: center;
+    justify-content: center;
+    
+}
+.experiencia-anos .anos-trabalho span, .experiencia-anos .quant-projetos span{
+    color: var(--rosa-claro);
+    font-weight: 900;
+    font-size: 60px;
+}
+
+/* ESTILIZAÇÃO DA SEÇÃO "SSERVIÇOS" */
+#servicos{
+    
+    font-family: Poppins;
+    margin-top: 80px;
+}
+#servicos p{
+    color: var(--azul-claro);
+    font-size: 25px;
+}
+#servicos h2{
+    color: var(--preto);
+    font-size: 50px;
+    margin-top: -20px;
+}
+#servicos .row .col-md-4{
+    background-color: #DFDFDF;
+    text-align: center;
+    margin: 0 px;
+    padding: 20px;
+}
+#servicos .row .col-md-4 svg{
+    width: 90px;
+}
+#servicos .row .col-md-4 h3{
+    color: var(--rosa-claro);
+    font-size: 25px;
+    margin: 30px 0;
+}
+#servicos .row .col-md-4 p{
+    color: var(--preto);
+    font-size: 20px;
 }

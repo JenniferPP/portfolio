@@ -22,11 +22,11 @@ Agora irei apresentar todo meu código para meu site! -->
     <head>
         <div class="menu row">
             <!-- Logo do menu -->
-            <div class="col-md-4 logo-menu">
-                <a href="#" class="logo-menu"><img src="./src/img/logo/LOGO-100X .png" alt="logo" width="80px"></a>
+            <div class="col-md-2 logo-menu">
+                <a href="#" class="logo-menu"><img src="./src/img/logo/LOGO-100X .png" alt="logo" ></a>
             </div>
             <!-- Menu de links -->
-            <div class="col-md-4 links-menu">
+            <div class="col-md-7 links-menu">
                 <nav class="main-menu">
                     <ul>
                         <li><a href="#" class="sobre-link">Sobre mim</a></li>
@@ -37,7 +37,7 @@ Agora irei apresentar todo meu código para meu site! -->
             </div>
 
             <!-- Botão de contato do Menu -->
-            <div class="col-md-4 contato-menu ">
+            <div class="col-md-3 contato-menu ">
                 <a href="#" class="contato-link float-end">Entrar em Contato</a>
             </div>
         </div>
@@ -48,8 +48,8 @@ Agora irei apresentar todo meu código para meu site! -->
     <section class="topo-site">
         <div class="row">
             <!-- lado esquerdo / informações sobre minha carreira -->
-            <div class="col-md-6 apresentacao">
-                <p><span style="color:var(--azul-claro)">Hello,</span> eu sou<br>
+            <div class="col-md-7 apresentacao">
+                <p><span style="color:var(--azul-claro)">Hello,</span> eu sou a<br>
                     <h1>Jennifer Peixoto</h1><br>
                     <h2>Designer UX/UI, Web e Gráfico</h2>
                 </p>
@@ -67,31 +67,51 @@ Agora irei apresentar todo meu código para meu site! -->
             </div>
 
             <!-- lado direito / Minha foto de apresentação -->
-            <div class="col-md-6">
+            <div class="col-md-5">
                 <img src="./src/img/jennifer.jpg" alt="Jennifer Peixoto, Designer Digital" height="auto" width="100px">
             </div>
         </div>
     </section>
 
     <!-- O resumo de minha jornada e experiencia -->
-    <section id="sobre-mim">
+    <section id="sobre-mim" class="container">
         <div class="row">
             <div class="col-md-12 minha-jornada">
                 <p>Sobre mim</p>
                 <h2>Minha Jornada</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit laboriosam quos, numquam illo quo accusamus labore voluptatibus odit natus maiores repellendus est excepturi culpa quidem quibusdam quaerat aperiam debitis? Quidem.</p>
+                <p class="sobre-txt">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit laboriosam quos, numquam illo quo accusamus labore voluptatibus odit natus maiores repellendus est excepturi culpa quidem quibusdam quaerat aperiam debitis? Quidem.</p>
+                <div class="experiencia-anos row">
+                    <div class="anos-trabalho col-6">
+                        <p><span>3 </span>anos de experiência</p>
+                    </div>
+                    <div class="quant-projetos col-6">
+                        <p><span>+10 </span>projetos realizados</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Todos os serviços que presto como Designer -->
-    <section id="servicos">
+    <section id="servicos" class="container">
         <p>Meus Serviços</p>
         <h2>O que faço</h2>
         <div class="row">
-            <div class="col-md-4 ux-ui">Designer UX/UI</div>
-            <div class="col-md-4 web-designer">Designer Web</div>
-            <div class="col-md-4 designer-grafico">Designer Gráfico</div>
+            <div class="col-md-4 ux-ui">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M64 0C28.7 0 0 28.7 0 64V352c0 35.3 28.7 64 64 64H240l-10.7 32H160c-17.7 0-32 14.3-32 32s14.3 32 32 32H416c17.7 0 32-14.3 32-32s-14.3-32-32-32H346.7L336 416H512c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64H64zM512 64V288H64V64H512z"/></svg>
+                <h3>Designer UX/UI</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui necessitatibus reprehenderit reiciendis</p>
+            </div>
+            <div class="col-md-4 web-desirgner">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M64 0C28.7 0 0 28.7 0 64V352c0 35.3 28.7 64 64 64H240l-10.7 32H160c-17.7 0-32 14.3-32 32s14.3 32 32 32H416c17.7 0 32-14.3 32-32s-14.3-32-32-32H346.7L336 416H512c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64H64zM512 64V288H64V64H512z"/></svg>
+                <h3>Designer Web</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui necessitatibus reprehenderit reiciendis</p>
+            </div>
+            <div class="col-md-4 designer-grafico">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M64 0C28.7 0 0 28.7 0 64V352c0 35.3 28.7 64 64 64H240l-10.7 32H160c-17.7 0-32 14.3-32 32s14.3 32 32 32H416c17.7 0 32-14.3 32-32s-14.3-32-32-32H346.7L336 416H512c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64H64zM512 64V288H64V64H512z"/></svg>
+                <h3>Designer Gráfico</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui necessitatibus reprehenderit reiciendis</p>
+            </div>
         </div>
     </section>
 
