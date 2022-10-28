@@ -11,10 +11,14 @@
     --preto: #272727;
   }
 
+  body{
+    margin: 0;
+    padding: 0;
+  }
   .row{
+    margin: 0;
     width: 100%;
   }
-
 
 /*ESTILIZAÇÃO DO MENU DE NAVEGAÇÃO */
 .menu{
@@ -22,17 +26,15 @@
     background-color: #272727;
     align-items: center;
     justify-content: center;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 600;
     color:white;
-    padding: 60px 0;
+    padding: 30px 0;
+    text-align: center;
     width: 101%;
 }
-.links-menu{
-    text-align: center;
-}
-.logo-menu{
-    text-align: center;
+.logo-menu img{
+    width:80px;
 }
 .main-menu ul{
     list-style: none;
@@ -44,7 +46,7 @@
     color: white;
     display: inline-block;
     text-decoration: none;
-    padding: 10px 50px;
+    padding: 10px 50px 0 50px;
     transition: 0.3s;
 }
 .main-menu ul li a:hover{
@@ -56,7 +58,8 @@
     border-radius: 50px;
     padding: 10px 20px;
     color: white;
-    transition: all 0.3s ;
+    transition: all 0.3s;
+    font-weight: 400;
 }
 .contato-link:hover{
     background-color: var(--rosa-escuro);
@@ -69,6 +72,7 @@
     background-color: var(--preto);
     color: white;
     padding: 50px 50px;
+    padding-bottom: 0;
     font-family: 'Poppins', sans-serif;
 }
     /* Heading line e texto de apresentação */
@@ -88,17 +92,17 @@
     font-weight: 500;
     font-size: 30px;
     line-height: 38px;
-    margin-bottom: 70px;
+    margin-bottom: 40px;
 }
 .apresentacao .experiencia_text{
     font-weight: 500;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 30px;
-    padding-right: 150px;
+    padding-right: 250px;
 }
     /* Botoes de ação do topo */
 .buttons{
-    margin-top: 40px;
+    margin-top: 20px;
 }
 .btn_contato-topo{
     background-color: var(--rosa-claro);
@@ -124,15 +128,20 @@
 }
     /* Minhas midias sociais */
 .midias{
-    margin-top: 45px;
+    margin-top: 40px;
 }
-.midias svg{
-    width: 50px;
+.midias i{
     color: var(--preto);
     background-color: var(--rosa-escuro);
     padding: 10px;
+    font-size: 30px;
     border-radius: 10px;
+    transition: all 0.3s;
 }
+.midias i:hover{
+    background-color: var(--azul-claro);
+}
+
 
 /* ESTILIZAÇÃO DA SEÇÃO "SOBRE MIM" */
 .minha-jornada{
@@ -178,34 +187,48 @@
 
 /* ESTILIZAÇÃO DA SEÇÃO "SSERVIÇOS" */
 #servicos{
-    
     font-family: Poppins;
     margin-top: 80px;
 }
 #servicos p{
     color: var(--azul-claro);
     font-size: 25px;
+    margin-left: 6%;
 }
 #servicos h2{
     color: var(--preto);
     font-size: 50px;
     margin-top: -20px;
+    margin-left: 6%;
 }
-#servicos .row .col-md-4{
+#servicos .o-que-faco{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 35px;
+}
+#servicos .o-que-faco .servico{
     background-color: #DFDFDF;
     text-align: center;
-    margin: 0 px;
+    margin: 40px;
     padding: 20px;
 }
-#servicos .row .col-md-4 svg{
-    width: 90px;
+#servicos .o-que-faco .servico i{
+    font-size: 90px;
+    color: var(--rosa-escuro);
 }
-#servicos .row .col-md-4 h3{
+#servicos .o-que-faco .servico h3{
     color: var(--rosa-claro);
     font-size: 25px;
     margin: 30px 0;
 }
-#servicos .row .col-md-4 p{
+#servicos .o-que-faco .servico p{
     color: var(--preto);
     font-size: 20px;
+}
+
+/* ESTILIZAÇÃO DA MELHOR PARTE, MEU PORTFÓLIO! */
+#portfolio{
+    background-image: url("../src/img/meus-projetos-fundo.jpg");
 }
