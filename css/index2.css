@@ -231,4 +231,18 @@
 /* ESTILIZAÇÃO DA MELHOR PARTE, MEU PORTFÓLIO! */
 #portfolio{
     background-image: url("../src/img/meus-projetos-fundo.jpg");
+    padding: 50px 0;
+}
+.projetos{
+    text-align: center;
+    font-family: Poppins;
+}
+.projetos p{
+    color: var(--azul-claro);
+    font-size: 25px;
+}
+.projetos h2{
+    color: var(--preto);
+    font-size: 50px;
+    margin-top: -20px;
 }
