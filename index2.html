@@ -14,7 +14,9 @@ Agora irei apresentar todo meu código para meu site! -->
     <!-- Styles do CSS -->
     <link rel="stylesheet" href="./css/index2.css">
     <!-- Agora irei colocar os CDN do Bootstrap! -->
-    <link  rel="stylesheet"  href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"  integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"  crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
     <!--Font Font Awesome CDN LINK para ícones-->
     <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -26,21 +28,21 @@ Agora irei apresentar todo meu código para meu site! -->
         <div class="menu row">
             <!-- Logo do menu -->
             <div class="col-md-2 logo-menu">
-                <a href="#" class="logo-menu"><img src="./src/img/logo/LOGO-100X-branco.png" alt="jennifer-peixoto-logo" ></a>
+                <a href="index.html" class="logo-menu" ><img src="./src/img/logo/LOGO-100X-branco.png" alt="jennifer-peixoto-logo" ></a>
             </div>
             <!-- Menu de links -->
             <div class="col-md-7 links-menu">
                 <nav class="main-menu">
                     <ul>
-                        <li><a href="#" class="sobre-link">Sobre mim</a></li>
-                        <li><a href="#" class="servicos-link">Serviços</a></li>
-                        <li><a href="#" class="portfolio-link">Portfólio</a></li>
+                        <li><a href="#sobre-mim" class="sobre-link">Sobre mim</a></li>
+                        <li><a href="#servicos" class="servicos-link">Serviços</a></li>
+                        <li><a href="#portfolio" class="portfolio-link">Portfólio</a></li>
                     </ul>
                 </nav>
             </div>
             <!-- Botão de contato do Menu -->
             <div class="col-md- contato-menu ">
-                <a href="#" class="contato-link float-end">Entrar em Contato</a>
+                <a href="https://api.whatsapp.com/send?phone=5511961794807&text=Ol%C3%A1%20como%20vai%3F%20Eu%20entrei%20no%20seu%20site%20e%20gostaria%20de%20saber%20um%20pouco%20mais%20sobre..." class="contato-link float-end">Entrar em Contato</a>
             </div>
         </div>     
     
@@ -62,8 +64,8 @@ Agora irei apresentar todo meu código para meu site! -->
                 </div>
                 <!-- Icones das minhas mídias -->
                 <div class="midias">
-                    <a href="https://www.linkedin.com/in/jennifer-peixoto/"><i class="fa-brands fa fa-linkedin"></i></a>
-                    <a href="https://github.com/JenniferPP"><i class="fa-brands fa fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/jennifer-peixoto/" target="_blank"><i class="fa-brands fa fa-linkedin"></i></a>
+                    <a href="https://github.com/JenniferPP" target="_blank"><i class="fa-brands fa fa-github"></i></a>
                 </div>
             </div>
 
@@ -125,11 +127,38 @@ Agora irei apresentar todo meu código para meu site! -->
             </div>
             <div class="col-md-12">Carrousel de imagem dos projetos</div>
         </div>
-        <button>Botão para ar ao portfólio</button>
+        <a href="#" class="btn-portfolio">Ver todos projetos</a>
     </section>
 
-    <section class="form-contato">
-        <form action=""></form>
+    <!-- Formulário de contato para falar comigo! -->
+    <section class="form-contato container">
+        <div class="row">
+            <div class="col-md-12 formulario">
+                <h2>Me envie uma mensagem!</h2>
+                <p>Vamos criar algo incrível juntos!</p>
+            </div>
+        </div>
+
+        <!-- Formulário de contato -->
+        <form class="form-inline">
+            <div class="form-group mb-2">
+                <input type="text" class="form-control" placeholder="Nome" required>
+            </div>
+            <div class="form-group mx-sm-3 mb-2">
+                <input type="email" class="form-control" id="email"  placeholder="Insira seu melhor e-mail aqui!" required>
+            </div>
+            <button type="submit" class="btn btn-primary mb-2 btn-enviar">Enviar</button>
+          </form>
     </section>
+
+    <section class="copyright">
+        <p><i class="fa fa-solid fa-copyright"></i> Todos direitos reservados para Jennifer Peixoto</p>
+    </section>
+
+
+    <!-- Java Script do Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </body>
 </html>
