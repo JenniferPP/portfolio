@@ -10,7 +10,9 @@
     --azul-claro:#478CA2;
     --preto: #272727;
   }
-
+  html{
+    scroll-behavior: smooth;
+  }
   body{
     margin: 0;
     padding: 0;
@@ -232,10 +234,10 @@
 #portfolio{
     background-image: url("../src/img/meus-projetos-fundo.jpg");
     padding: 50px 0;
+    font-family: Poppins;
 }
 .projetos{
     text-align: center;
-    font-family: Poppins;
 }
 .projetos p{
     color: var(--azul-claro);
@@ -245,4 +247,69 @@
     color: var(--preto);
     font-size: 50px;
     margin-top: -20px;
+}
+
+.btn-portfolio{
+    background-color: var(--rosa-escuro);
+    padding: 8px 15px;
+    font-size: 18px;
+    color: white;
+    border-radius: 50px;
+    transition: 0.3s;
+    margin-top: 40px;
+}
+
+.btn-portfolio:hover{
+    background-color: var(--rosa-claro);
+    text-decoration: none;
+    color: white;
+}
+
+/* ESTILIZAÇÃO DO FORMULÁRIO DE CONTATO */
+.form-contato{
+    font-family: Poppins;
+    margin: 80px 0;
+    text-align: center;
+}
+.form-contato h2{
+    color: var(--rosa-claro);
+    font-size: 50px;
+    font-weight: 600;
+}
+.form-contato p{
+    color: var(--preto);
+    font-size: 25px;
+    font-weight: 500;
+}
+.form-contato form{
+    margin-top: 40px;
+}
+.form-contato form .form-control{
+    width:120%;
+    border: 1px solid var(--preto);
+    height: 50px;
+    color: var(--preto);
+}
+.form-contato form .btn-enviar{
+    background-color: var(--rosa-claro);
+    color: white;
+    border-radius: 5px;
+    border: none;
+    padding: 9px 50px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+/* ESTILIZAÇÃO DO RODAPÉ / DIREITOS AUTORAIS */
+.copyright{
+    background-color: var(--preto);
+    padding: 30px 0 10px 0;
+    margin: 0;
+}
+.copyright p{
+    font-family: Poppins;
+    font-size: 16px;
+    color: white;
+    text-align: center;
 }
