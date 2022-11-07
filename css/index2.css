@@ -113,6 +113,7 @@
     font-size: 18px;
     border-radius: 50px;
     transition: all 0.3s;
+    border: solid 1px #D97F81;
 }
 .btn_cv{
     padding: 10px 20px;
@@ -127,6 +128,7 @@
     background-color: var(--rosa-escuro);
     color: white;
     text-decoration: none;
+    border: 1px solid var(--rosa-escuro);
 }
     /* Minhas midias sociais */
 .midias{
@@ -265,6 +267,27 @@
     color: white;
 }
 
+/* carousel */
+.MultiCarousel{
+    float: left;
+    overflow: hidden;
+    padding: 15px;
+    width: 100%;
+    position:relative;
+    background-color: red;
+}
+.MultiCarousel .MultiCarousel-inner{
+    transition: 1s ease all;
+    float: left; }
+        .MultiCarousel .MultiCarousel-inner .item { float: left;}
+        .MultiCarousel .MultiCarousel-inner .item > div { text-align: center; padding:10px; margin:10px; background:#f1f1f1; color:#666;}
+    .MultiCarousel .leftLst, .MultiCarousel .rightLst { position:absolute; border-radius:50%;top:calc(50% - 20px); }
+    .MultiCarousel .leftLst { left:0; }
+    .MultiCarousel .rightLst { right:0; }
+    
+        .MultiCarousel .leftLst.over, .MultiCarousel .rightLst.over { pointer-events: none; background:#ccc; }
+
+
 /* ESTILIZAÇÃO DO FORMULÁRIO DE CONTATO */
 .form-contato{
     font-family: Poppins;
@@ -283,21 +306,30 @@
 }
 .form-contato form{
     margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 .form-contato form .form-control{
     width:120%;
     border: 1px solid var(--preto);
     height: 50px;
     color: var(--preto);
+    width: 450px;
 }
 .form-contato form .btn-enviar{
-    background-color: var(--rosa-claro);
+    background-color: var(--azul-claro);
     color: white;
     border-radius: 5px;
     border: none;
     padding: 9px 50px;
     font-size: 20px;
     font-weight: 600;
+    transition: ease 0.3s;
+}
+.form-contato form .btn-enviar:hover{
+    background-color: var(--azul-escuro);
 }
 
 
