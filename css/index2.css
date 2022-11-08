@@ -268,25 +268,34 @@
 }
 
 /* carousel */
-.MultiCarousel{
-    float: left;
-    overflow: hidden;
-    padding: 15px;
+.carousel{
+    margin-left: 3%;
+    margin-top: 10px;
     width: 100%;
-    position:relative;
-    background-color: red;
 }
-.MultiCarousel .MultiCarousel-inner{
-    transition: 1s ease all;
-    float: left; }
-        .MultiCarousel .MultiCarousel-inner .item { float: left;}
-        .MultiCarousel .MultiCarousel-inner .item > div { text-align: center; padding:10px; margin:10px; background:#f1f1f1; color:#666;}
-    .MultiCarousel .leftLst, .MultiCarousel .rightLst { position:absolute; border-radius:50%;top:calc(50% - 20px); }
-    .MultiCarousel .leftLst { left:0; }
-    .MultiCarousel .rightLst { right:0; }
+/* .carousel .carousel-itens{
     
-        .MultiCarousel .leftLst.over, .MultiCarousel .rightLst.over { pointer-events: none; background:#ccc; }
+} */
+.carousel .carousel-item{
+    margin: 0 10px;
+}
+.carousel .carousel-indicators {
+	top: auto;
+    margin-top: 180px;
+}
 
+
+/* The colour of the indicators */
+.carousel .carousel-indicators li {
+    background: #a3a3a3;
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+}
+
+.carousel .carousel-indicators .active {
+background: #707070;
+}
 
 /* ESTILIZAÇÃO DO FORMULÁRIO DE CONTATO */
 .form-contato{
