@@ -96,7 +96,7 @@ $(document).ready(function () {
         $(el + ' ' + itemsDiv).css('transform', 'translateX(' + -translateXval + 'px)');
     }
 
-    //It is used to get some elements from btn
+    //Função para os botões de indicadores
     function click(ell, ee) {
         var Parent = "#" + $(ee).parent().attr("id");
         var slide = $(Parent).attr("data-slide");
