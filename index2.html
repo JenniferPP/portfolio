@@ -22,26 +22,56 @@ Agora irei apresentar todo meu código para meu site! -->
 <body>
     
     <!-- Cabeçalho do site -->
-        <div class="menu row">
+        <div class="menu menu-desktop row">
             <!-- Logo do menu -->
             <div class="col-md-2 logo-menu">
                 <a href="index.html" class="logo-menu" ><img src="./src/img/logo/LOGO-100X-branco.png" alt="jennifer-peixoto-logo" ></a>
             </div>
             <!-- Menu de links -->
             <div class="col-md-7 links-menu">
-                <nav class="main-menu">
+                <nav class="main-menu navbar">
                     <ul>
-                        <li><a href="#sobre-mim" class="sobre-link">Sobre mim</a></li>
+                        <li><a href="#sobre-mim" class="sobre-link ">Sobre mim</a></li>
                         <li><a href="#servicos" class="servicos-link">Serviços</a></li>
                         <li><a href="#portfolio" class="portfolio-link">Portfólio</a></li>
                     </ul>
                 </nav>
             </div>
             <!-- Botão de contato do Menu -->
-            <div class="col-md- contato-menu ">
-                <a href="https://api.whatsapp.com/send?phone=5511961794807&text=Ol%C3%A1%20como%20vai%3F%20Eu%20entrei%20no%20seu%20site%20e%20gostaria%20de%20saber%20um%20pouco%20mais%20sobre..." class="contato-link float-end">Entrar em Contato</a>
+            <div class="col-md-3 contato-menu ">
+                <a href="https://api.whatsapp.com/send?phone=5511961794807&text=Ol%C3%A1%20Jennifer,%20tudo%20bem?%20Entrei%20no%20seu%20site%20e%20quero%20criar%20algo%20incr%C3%ADvel%20com%20voc%C3%AA!" class="contato-link float-end">Entrar em Contato</a>
             </div>
-        </div>     
+        </div>  
+        
+    <!-- Menu Mobile -->
+    <div class="menu-mobile">
+        <!--Navbar-->
+<nav class="navbar navbar-light navbar-1 white">
+
+    <!-- Navbar brand -->
+    <a href="index.html" class="logo-menu navbar-brand" ><img src="./src/img/logo/LOGO-100X-branco.png" alt="jennifer-peixoto-logo" ></a>
+  
+    <!-- Collapse button -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-mobile"
+      aria-controls="navbarSupportedContent15" aria-expanded="false" aria-label="Toggle navigation"><span class=><i class="fa fa-solid fa-bars"></i></span></button>
+  
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbar-mobile">
+  
+      <!-- Links -->
+      <ul class="navbar-nav mr-auto">
+        <li><a href="#sobre-mim" class="sobre-link ">Sobre mim</a></li>
+        <li><a href="#servicos" class="servicos-link">Serviços</a></li>
+        <li><a href="#portfolio" class="portfolio-link">Portfólio</a></li>
+      </ul>
+      <!-- Links -->
+  
+    </div>
+    <!-- Collapsible content -->
+  
+  </nav>
+  <!--/.Navbar-->
+    </div>
     
 
     <!-- Topo da página. Seção antes da primeira dobra -->
@@ -79,10 +109,12 @@ Agora irei apresentar todo meu código para meu site! -->
             <div class="col-md-12 minha-jornada">
                 <p>Sobre mim</p>
                 <h2>Minha Jornada</h2>
-                <p class="sobre-txt">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit laboriosam quos, numquam illo quo accusamus labore voluptatibus odit natus maiores repellendus est excepturi culpa quidem quibusdam quaerat aperiam debitis? Quidem.</p>
+                <p class="sobre-txt">Minha jornada se inicia com uma garota cursiosa e sedenta por conheimento, que acidentalmente se achou dentro da área de Tecnologia e Desing. Já passei por diversos desafios e aprendi muito,
+                    e des de 2018 sinto que venho evoluindo de forma exponencial. 
+                </p>
                 <div class="experiencia-anos row">
                     <div class="anos-trabalho col-6">
-                        <p><span>3 </span>anos de experiência</p>
+                        <p><span>4 </span>anos de experiência</p>
                     </div>
                     <div class="quant-projetos col-6">
                         <p><span>+10 </span>projetos realizados</p>
@@ -100,17 +132,17 @@ Agora irei apresentar todo meu código para meu site! -->
             <div class="col-md-3 ux-ui servico">
                 <i class="fa-thin fa fa-code"></i>
                 <h3>Designer UX/UI</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui necessitatibus reprehenderit reiciendis</p>
+                <p>Desenvolvimento de Interfaces para sites, aplicativos e e-commerces. </p>
             </div>
             <div class="col-md-3 web-desirgner servico">
                 <i class="fa-solid fa fa-desktop"></i>
                 <h3>Designer Web</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui necessitatibus reprehenderit reiciendis</p>
+                <p>Criação de peças gráficas para sites, mídias sociais, campanhas, ADS e lançamentos.</p>
             </div>
             <div class="col-md-3 designer-grafico servico">
                 <i class="fa-thin fa fa-pencil"></i>
                 <h3>Designer Gráfico</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui necessitatibus reprehenderit reiciendis</p>
+                <p>Desenvolvimento de logos, branding e peças gráficas para impressões.</p>
             </div>
         </div>
     </section>
@@ -134,6 +166,8 @@ Agora irei apresentar todo meu código para meu site! -->
                             <li data-target="#carousel-mult" data-slide-to="0" class="active"></li>
                             <li data-target="#carousel-mult" data-slide-to="1"></li>
                             <li data-target="#carousel-mult" data-slide-to="2"></li>
+                            <li data-target="#carousel-mult" data-slide-to="3"></li>
+                            <li data-target="#carousel-mult" data-slide-to="4"></li>
                         </ol>
     
                         <!-- Carousel items -->
@@ -145,7 +179,7 @@ Agora irei apresentar todo meu código para meu site! -->
                                         <!-- Slider 1 -->
                                         <div class="col-md-4">
                                             <a href="https://alianjoiasoficial.com.br/">
-                                                <img src="src/img/portifolio/ecommerce-alian-joias.jpg"alt="Logo da minha marca como Designer - JP Designer" style="max-width:100%;">
+                                                <img src="src/img/portifolio/ecommerce-alian-joias.jpg"alt="Ecommerce de Joias e Alianças - Alian Joias" style="max-width:100%;">
                                             </a>
                                             <div class="carousel-caption d-none d-md-block">
                                                 <a href="https://alianjoiasoficial.com.br/" target="_blank">
@@ -158,7 +192,7 @@ Agora irei apresentar todo meu código para meu site! -->
                                         <!-- Slider 2 -->
                                         <div class="col-md-4">
                                             <a href="https://vivadeleiloes.com.br/">
-                                                <img src="src/img/portifolio/lading-page-viva-de-leiloes.jpg"alt="Logo da minha marca como Designer - JP Designer" style="max-width:100%;">
+                                                <img src="src/img/portifolio/lading-page-viva-de-leiloes.jpg"alt="Landing Page de Captação de Leads para Whatsapp - Viva de Leilões" style="max-width:100%;">
                                             </a>
                                             <div class="carousel-caption d-none d-md-block">
                                                 <a href="https://vivadeleiloes.com.br/" target="_blank">
@@ -171,7 +205,7 @@ Agora irei apresentar todo meu código para meu site! -->
                                          <!-- Slider 3 -->
                                          <div class="col-md-4">
                                             <a href="https://cpmconcurso.com.br/">
-                                                <img src="src/img/portifolio/site-instucional-cpm-concursos.jpg"alt="Logo da minha marca como Designer - JP Designer" style="max-width:100%;">
+                                                <img src="src/img/portifolio/site-instucional-cpm-concursos.jpg"alt="Site Institucional - CPM Concurso / Paulo Machado" style="max-width:100%;">
                                             </a>
                                             <div class="carousel-caption d-none d-md-block">
                                                 <a href="https://cpmconcurso.com.br/" target="_blank">
@@ -190,7 +224,7 @@ Agora irei apresentar todo meu código para meu site! -->
                                         <!-- Slider 4 -->
                                         <div class="col-md-4">
                                             <a href="https://ead.cpmconcurso.com.br/">
-                                                <img src="src/img/portifolio/plataforma-ead-professor-paulo-machado.jpg"alt="Logo da minha marca como Designer - JP Designer" style="max-width:100%;">
+                                                <img src="src/img/portifolio/plataforma-ead-professor-paulo-machado.jpg"alt="Plataforma EAD - CPM Concurso / Paulo Machado" style="max-width:100%;">
                                             </a>
                                             <div class="carousel-caption d-none d-md-block">
                                                 <a href="https://ead.cpmconcurso.com.br/" target="_blank">
@@ -203,7 +237,7 @@ Agora irei apresentar todo meu código para meu site! -->
                                         <!-- Slider 5 -->
                                         <div class="col-md-4">
                                             <a href="https://virtiscar.com.br/">
-                                                <img src="src/img/portifolio/site-de-carros-virtiscar.jpg"alt="Logo da minha marca como Designer - JP Designer" style="max-width:100%;">
+                                                <img src="src/img/portifolio/site-de-carros-virtiscar.jpg"alt="Site de Carros - Virtiscar" style="max-width:100%;">
                                             </a>
                                             <div class="carousel-caption d-none d-md-block">
                                                 <a href="https://virtiscar.com.br/" target="_blank">
@@ -216,7 +250,7 @@ Agora irei apresentar todo meu código para meu site! -->
                                         <!-- Slider 6 -->
                                         <div class="col-md-4">
                                             <a href="https://imedilife.com.br/">
-                                                <img src="src/img/portifolio/site-institucional-imedi.jpg"alt="Logo da minha marca como Designer - JP Designer" style="max-width:100%;">
+                                                <img src="src/img/portifolio/site-institucional-imedi.jpg"alt="Site de Institucional de Clínica Médica - iMEDI Life" style="max-width:100%;">
                                             </a>
                                             <div class="carousel-caption d-none d-md-block">
                                                 <a href="https://imedilife.com.br/" target="_blank">
@@ -235,7 +269,7 @@ Agora irei apresentar todo meu código para meu site! -->
                                         <!-- Slider 7 -->
                                         <div class="col-md-4">
                                             <a href="https://mentorwesley.com.br/blog/">
-                                                <img src="src/img/portifolio/blog-mentor-wesley-trader-esportivo.jpg"alt="Logo da minha marca como Designer - JP Designer" style="max-width:100%;">
+                                                <img src="src/img/portifolio/blog-mentor-wesley-trader-esportivo.jpg"alt="Blog sobre Trader Esportivo e Investimento - Blog Black" style="max-width:100%;">
                                             </a>
                                             <div class="carousel-caption d-none d-md-block">
                                                 <a href="https://mentorwesley.com.br/blog/" target="_blank">
@@ -248,7 +282,7 @@ Agora irei apresentar todo meu código para meu site! -->
                                         <!-- Slider 8 -->
                                         <div class="col-md-4">
                                             <a href="https://colchoestecnologicos.com/">
-                                                <img src="src/img/portifolio/landing-page-haiflex-colchoes.jpg"alt="Logo da minha marca como Designer - JP Designer" style="max-width:100%;">
+                                                <img src="src/img/portifolio/landing-page-haiflex-colchoes.jpg"alt="Página de Venda para Colchões Tecnológicos - Haiflex" style="max-width:100%;">
                                             </a>
                                             <div class="carousel-caption d-none d-md-block">
                                                 <a href="https://colchoestecnologicos.com/" target="_blank">
@@ -261,19 +295,99 @@ Agora irei apresentar todo meu código para meu site! -->
                                         <!-- Slider 9 -->
                                         <div class="col-md-4">
                                             <a href="https://malibrasilreversa.com.br/">
-                                                <img src="src/img/portifolio/site-institucional-mali-brasil-reversa-case-real.jpg"alt="Logo da minha marca como Designer - JP Designer" style="max-width:100%;">
+                                                <img src="src/img/portifolio/site-institucional-mali-brasil-reversa-case-real.jpg"alt="Site de Institucional - Mali Brasil Reversa " style="max-width:100%;">
                                             </a>
                                             <div class="carousel-caption d-none d-md-block">
                                                 <a href="https://malibrasilreversa.com.br/" target="_blank">
-                                                    <p>Site de Institucional de Clínica Médica - iMEDI Life </p>
+                                                    <p>Site de Institucional - Mali Brasil Reversa </p>
                                                 </a>
-                                                    <p class="servico">Design UX/UI</p>
+                                                    <p class="servico">Design Gráfico</p>
                                             </div>
                                         </div>
                                     </div>
                                     <!--.row-->
                             </div>
                             <!--.item-->
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <!-- Slider 10 -->
+                                    <div class="col-md-4">
+                                        <a href="https://www.andredintof.com.br/desafio-12-em-2">
+                                            <img src="src/img/portifolio/landing-page-de-vendas-desafio-12-em-2.jpg"alt="Desenvolvimento de identidade visual para um podcast cristão " style="max-width:100%;">
+                                        </a>
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <a href="https://www.andredintof.com.br/desafio-12-em-2" target="_blank">
+                                                <p>Página de Vendas para André Dintoff - Desafio 12 em 2</p>
+                                            </a>
+                                                <p class="servico">Design UX/UI</p>
+                                        </div>
+                                    </div>
+
+                                    <!-- Slider 11 -->
+                                    <div class="col-md-4">
+                                        <a href="https://www.andredintof.com.br/grupo-whatsapp">
+                                            <img src="src/img/portifolio/landing-page-de-captura-desafio-12-em-2.jpg"alt="Desenvolvimento de identidade visual para um grupo de empregabilidade" style="max-width:100%;">
+                                        </a>
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <a href="https://www.andredintof.com.br/grupo-whatsapp" target="_blank">
+                                                <p>Landing Page de Captação de LEADS para Whatsapp - Upgrade André Dintoff</p>
+                                            </a>
+                                                <p class="servico">Design Gráfico</p>
+                                        </div>
+                                    </div>
+
+                                    <!-- Slider 12 -->
+                                    <div class="col-md-4">
+                                        <a href="https://drive.google.com/file/d/1_dfjdOLRaxuMpMmGVBEvYz66BMua0Xkr/view?usp=sharing">
+                                            <img src="src/img/portifolio/logo-designer-de-sobrancelha-vitoria-piropo.jpg"alt="Desenvolvimento de identidade visual para designer de sobrancelhas" style="max-width:100%;">
+                                        </a>
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <a href="https://drive.google.com/file/d/1_dfjdOLRaxuMpMmGVBEvYz66BMua0Xkr/view?usp=sharing" target="_blank">
+                                                <p>Desenvolvimento de identidade visual para designer de sobrancelhas </p>
+                                            </a>
+                                                <p class="servico">Design Gráfico</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--.row-->
+                            </div>
+                        <!--.item-->
+
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <!-- Slider 13 -->
+                                    <div class="col-md-4">
+                                        <a href="https://drive.google.com/file/d/1_jpJ_fI7eSu6292BBKsKqQ_jHTH14gpx/view?usp=sharing">
+                                            <img src="src/img/portifolio/podcast-diario-de-missao.jpg"alt="Desenvolvimento de identidade visual para um podcast cristão " style="max-width:100%;">
+                                        </a>
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <a href="https://drive.google.com/file/d/1_jpJ_fI7eSu6292BBKsKqQ_jHTH14gpx/view?usp=sharing" target="_blank">
+                                                <p>Desenvolvimento de identidade visual para um podcast cristão </p>
+                                            </a>
+                                                <p class="servico">Design Gráfico</p>
+                                        </div>
+                                    </div>
+
+                                    <!-- Slider 14 -->
+                                    <div class="col-md-4">
+                                        <a href="https://colchoestecnologicos.com/">
+                                            <img src="src/img/portifolio/projeto-social-esquadrao-tec.jpg"alt="Desenvolvimento de identidade visual para um grupo de empregabilidade" style="max-width:100%;">
+                                        </a>
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <a href="https://colchoestecnologicos.com/" target="_blank">
+                                                <p>Desenvolvimento de identidade visual para um grupo de empregabilidade</p>
+                                            </a>
+                                                <p class="servico">Design Gráfico</p>
+                                        </div>
+                                    </div>
+
+                                    <!-- Slider 15 -->
+                                    <div class="col-md-4"></div>
+                                </div>
+                                <!--.row-->
+                            </div>
+                            <!--.item-->
+
                         </div>
                         <!--.carousel-inner-->
                         <a class="carousel-control-prev" href="#carousel-mult" role="button" data-slide="prev">
@@ -302,15 +416,18 @@ Agora irei apresentar todo meu código para meu site! -->
         </div>
 
         <!-- Formulário de contato -->
-        <form class="form-inline">
+        <!-- <form class="form-inline" method="post" action="https://formsubmit.co/jenni-pp@hotmail.com">
+            <input type="hidden" name="_subject" value="Novo envio!">
+            <input type="hidden" name="_captcha" value="false">
             <div class="form-group mb-2">
-                <input type="text" class="form-control" placeholder="Nome" required>
+                <input type="text" class="form-control" name="nome" id="nome" placeholder="Insira o seu Nome" required>
             </div>
             <div class="form-group mx-sm-3 mb-2">
-                <input type="email" class="form-control" id="email"  placeholder="Insira seu melhor e-mail aqui!" required>
+                <input type="text" class="form-control" name="telefone" id="telefone" placeholder="Digite um número de telefone" maxlength="15" required>
             </div>
             <button type="submit" class="btn btn-primary mb-2 btn-enviar">Enviar</button>
-          </form>
+          </form> -->
+          <a href="https://api.whatsapp.com/send?phone=5511961794807&text=Ol%C3%A1%20Jennifer,%20tudo%20bem?%20Entrei%20no%20seu%20site%20e%20quero%20criar%20algo%20incr%C3%ADvel%20com%20voc%C3%AA!" class="cont-whats">Quero entrar em Contato <i class="fa-brands fa fa-whatsapp"></i></a>
     </section>
 
     <section class="copyright">
@@ -321,9 +438,38 @@ Agora irei apresentar todo meu código para meu site! -->
     </script>
 
 
+    <!-- Código de Java Script para Máscara de Telefone -->
+    <script>
+        // Mascara de Telefone do formulário
+/* Máscaras ER */
+function mascara(o,f){
+    v_obj=o
+    v_fun=f
+    setTimeout("execmascara()",1)
+}
+function execmascara(){
+    v_obj.value=v_fun(v_obj.value)
+}
+function mtel(v){
+    v=v.replace(/\D/g,""); //Remove tudo o que não é dígito
+    v=v.replace(/^(\d{2})(\d)/g,"($1) $2"); //Coloca parênteses em volta dos dois primeiros dígitos
+    v=v.replace(/(\d)(\d{4})$/,"$1-$2"); //Coloca hífen entre o quarto e o quinto dígitos
+    return v;
+}
+function id( el ){
+	return document.getElementById( el );
+}
+window.onload = function(){
+	id('telefone').onkeyup = function(){
+		mascara( this, mtel );
+	}
+}
+    </script>
+
     <!-- Java Script do Bootstrap -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
 </body>
 </html>

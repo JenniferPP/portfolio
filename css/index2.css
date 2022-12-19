@@ -22,7 +22,11 @@
     width: 100%;
   }
 
-/*ESTILIZAÇÃO DO MENU DE NAVEGAÇÃO */
+/*-----------------------ESTILIZAÇÃO DO MENU DE NAVEGAÇÃO */
+  /* Ocultando menu Mobile no Desktop */
+.menu-mobile{
+    display: none;
+} 
 .menu{
     font-family: 'Poppins', sans-serif;
     background-color: #272727;
@@ -54,7 +58,7 @@
 .main-menu ul li a:hover{
     color: var(--rosa-escuro);
 }
-    /* Botão de contato no menu */
+/* Botão de contato no menu */
 .contato-link{
     background-color: var(--rosa-claro);
     border-radius: 50px;
@@ -68,8 +72,46 @@
     text-decoration: none;
     color: white;
 }
+/* Versão Mobile do Menu */
+@media (max-width: 600px){
+    /* Ocultando menu Desktop do mobile */
+    .menu .logo-menu, .menu .links-menu, .menu .contato-menu {
+        display:none;
+    }
+    .menu-mobile{
+        display: block;
+        margin-top: -60px;
+        background-color: var(--preto);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.452);
+    }
+    .logo-menu img{
+        width:60px;
+    }
+    .fa-bars{
+        background-color: var(--rosa-claro);
+        padding: 10px 15px;
+        border-radius: 5px;
+        border: none;
+        font-size: 18px;
+        color: black;
+    }
+    .menu-mobile .navbar-collapse {
+        padding-left: 25px;
+        margin-top: 5px;
+    }
+    .menu-mobile .navbar-collapse .navbar-nav li{
+        padding: 7px 0;
+        border-top: 1px solid rgba(255, 255, 255, 0.247);
+        margin-left:-25px; 
+    }
+    .menu-mobile .navbar-collapse .navbar-nav li a{
+        color: white;
+        font-weight: 600;
+        
+    }
+}
 
-/* ESTILIZAÇÃO DO TOPO DO SITE */
+/*-----------------------ESTILIZAÇÃO DO TOPO DO SITE */
 .topo-site{
     background-color: var(--preto);
     color: white;
@@ -147,7 +189,7 @@
 }
 
 
-/* ESTILIZAÇÃO DA SEÇÃO "SOBRE MIM" */
+/*-----------------------ESTILIZAÇÃO DA SEÇÃO "SOBRE MIM" */
 .minha-jornada{
     text-align: center;
     font-family: Poppins;
@@ -189,10 +231,10 @@
     font-size: 60px;
 }
 
-/* ESTILIZAÇÃO DA SEÇÃO "SSERVIÇOS" */
+/*-----------------------ESTILIZAÇÃO DA SEÇÃO "SERVIÇOS" */
 #servicos{
     font-family: Poppins;
-    margin-top: 60px;
+    margin-top: 40px;
 }
 #servicos p{
     color: var(--azul-claro);
@@ -216,7 +258,7 @@
     background-color: #DFDFDF;
     text-align: center;
     margin: 40px;
-    padding: 20px;
+    padding: 10px;
 }
 #servicos .o-que-faco .servico i{
     font-size: 90px;
@@ -229,14 +271,15 @@
 }
 #servicos .o-que-faco .servico p{
     color: var(--preto);
-    font-size: 20px;
+    font-size: 19px;
 }
 
-/* ESTILIZAÇÃO DA MELHOR PARTE, MEU PORTFÓLIO! */
+/*-----------------------ESTILIZAÇÃO DA MELHOR PARTE, MEU PORTFÓLIO! */
 #portfolio{
     background-image: url("../src/img/meus-projetos-fundo.jpg");
     padding: 50px 0;
     font-family: Poppins;
+    margin-top: 40px;
 }
 .projetos{
     text-align: center;
@@ -250,7 +293,6 @@
     font-size: 50px;
     margin-top: -20px;
 }
-
 .btn-portfolio{
     background-color: var(--rosa-escuro);
     padding: 8px 15px;
@@ -267,7 +309,7 @@
     color: white;
 }
 
-/* carousel */
+/*carousel */
 .carousel{
     margin-left: 3%;
     margin-top: 10px;
@@ -327,7 +369,7 @@ background: var(--rosa-escuro);
     border-radius: 50px;
 }
 
-/* ESTILIZAÇÃO DO FORMULÁRIO DE CONTATO */
+/*-----------------------ESTILIZAÇÃO DO FORMULÁRIO DE CONTATO */
 .form-contato{
     font-family: Poppins;
     margin: 80px 0;
@@ -370,9 +412,24 @@ background: var(--rosa-escuro);
 .form-contato form .btn-enviar:hover{
     background-color: var(--azul-escuro);
 }
+.cont-whats{
+    background-color: #4EC148;
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 50px;
+    transition: all ease 0.3s;
+}
+.cont-whats:hover{
+    background-color: #228a1c;
+    color: white;
+    text-decoration: none;
+}
 
 
-/* ESTILIZAÇÃO DO RODAPÉ / DIREITOS AUTORAIS */
+/*-----------------------ESTILIZAÇÃO DO RODAPÉ / DIREITOS AUTORAIS */
 .copyright{
     background-color: var(--preto);
     padding: 30px 0 10px 0;
