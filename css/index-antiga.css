@@ -1,0 +1,739 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Varela Round', sans-serif;
+    scroll-behavior: smooth;
+    animation: fadeIn 0.8s linear;
+}
+@keyframes fadeIn {
+    0%{opacity: 0;
+    }
+    50%{opacity: 0.5;
+    }
+    100%{opacity: 1;
+    }
+}
+/* Estilização do Scrollbar */
+body::-webkit-scrollbar {
+    width: 7px
+} 
+body::-webkit-scrollbar-thumb {   
+    background-color: #5BB7D4;
+    border-radius: 20px;   
+}
+body::-webkit-scrollbar-track{
+    background-color: rgb(240, 240, 240);
+}
+
+/* ------------Menu sidebar */
+/* Topo */
+.menu{
+    position: fixed;
+    height: 85px;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+    z-index: 99999;
+}
+/* Logo no topo */
+.logoTopo{
+    margin-top: 7px;
+    margin-left: 2%;
+}
+.logoTopo img{
+    height: 70px;
+}
+.bgSidebar{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.63);
+    position:fixed;
+    z-index: 10;
+    top: 0;
+    display: none;
+}
+.sidebar{
+    position:fixed;
+    top: 0;
+    right: -260px;
+    width: 260px;
+    height: 100%;
+    background: #478CA2;
+    text-align: center;
+    transition: all .8s ease;
+    z-index: 999;
+}
+/* Foto Jennifer */
+.sidebar .foto_eu img{
+    border-radius: 50%;
+    padding: 3px;
+    background-color: #D97F81;
+    user-select: none;
+    max-width: 100%;
+}
+/* Linkedin, Github, instagram */
+.contatos_midias a{
+    color: rgba(255, 255, 255, 0.438);
+    text-decoration: none;
+    padding: 3px 9px;
+    border-radius: 100px;
+    font-size: 20px;
+    margin: 10px 
+}
+.contatos_midias a:hover{
+    color: rgb(235, 235, 235);
+    transition: all 0.3s;
+
+}
+/* links do menu */
+.links ul{
+    text-align: left;
+    list-style: none;
+}
+.links ul li a{
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 50px;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    padding-left: 40px;
+    box-sizing: border-box;
+    border-bottom: 1px solid rgba(255, 255, 255, .1); 
+}
+.links ul li:hover a{
+    color: rgba(255, 255, 255, 0.438);
+    transition: all .3s;
+}
+.links ul a i{
+    margin-right: 16px;
+}
+#check{
+    display: none;
+}
+label #openMenu, label #closeMenu {
+    position: absolute;
+    cursor: pointer;
+    border-radius: 3px; 
+}
+label #openMenu{
+    right: 50px;
+    top: 17px;
+    font-size: 30px;
+    color: #ffffff;
+    background-color: #478CA2;
+    padding: 6px 12px;
+    transition: all .8s;
+}
+/* Menu hamburguer */
+label #closeMenu{
+    position: fixed;
+    z-index: 9999;
+    right: 0;
+    top: 17px;
+    font-size: 0px;
+    color: #478CA2;
+    transition: all .8s ease;
+} 
+#check:checked ~ .bgSidebar{
+    display: block;
+    z-index: 99;
+}
+#check:checked ~ .sidebar{
+    right: 0;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+#check:checked ~ label #openMenu{
+    opacity: 0;
+    pointer-events: none;
+}
+#check:checked ~ label #closeMenu{
+    right: 220px;
+    background-color: #234651;
+    font-size: 20px;
+    padding: 4px 9px;
+}
+.email{
+   position: fixed;
+   top: 98%;
+   transform: translateY(-98%);
+   margin-left: 50px;
+}
+.email a{
+    font-size: 15px;
+    color: white;
+    text-decoration: none;
+}
+.email a:hover{
+    color: #ffffff8a;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+
+/* ------------Sobre mim */
+.sobreMim{
+    background-color: #F3F3F3;
+    width: 100%;
+    padding: 180px 0 0 150px;
+    height: 650px;
+}
+.boxAzul{
+    height: 330px;
+    width: 30%;
+    background-color: #5BB7D4;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.10) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.boxAzulEscuro{
+    width: 70%;
+    height: 490px;
+    background-color: #478CA2;
+    border-radius: 15px;
+    margin: -370px 0 0 180px;
+    box-shadow: rgba(0, 0, 0, 0.10) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.imgJennifer img{
+    /* margin: -400px 0 0 60px; */
+    margin: -400px 0 0 6%;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.10) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.txtSobre {
+    float: right;
+    margin: 90px 0 0 42%;
+}
+.txtSobre h1{
+    color: white;
+}
+.txtSobre p{
+    margin-right: 22px;
+    color: #89bcce;
+}
+.txtSobre a{
+    padding: 7px 18px;
+    border-radius: 5px;
+    color: white;
+    border: 1px solid rgb(255, 255, 255);
+    float: right;
+    margin-right: 22px;
+    font-weight: 700;
+}
+ .txtSobre a:hover{
+   background-color: white;
+   color: #478CA2;
+   transition: all 0.3s;
+   text-decoration: none; 
+}
+
+/* ------------Habiliades */
+/* Abas do menu */
+.menuAbas{
+    margin-top: 100px;
+    z-index: -999;
+    height: 500px;
+}
+.menuAbas ul li{
+    text-align: center;
+}
+.nav-tabs li a{
+    color: #707070;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 20px;
+}
+.nav-tabs li a:hover {
+    color: #D97F81;
+    text-decoration: none;
+}
+.nav-tabs li a.active  {
+    color: #D97F81;
+    border-bottom: 2px solid #D97F81  ;
+    transition: all 0.5s;
+}
+.conteudosAbas{
+    text-align: center;
+    padding: 20px 0 0 10%;
+}
+/* Soft Slills */
+.linha1{
+    padding-left: 10%;
+    animation: go-down 2s;
+}
+.linha2{
+    padding-left: 25%;
+    animation: go-down 2s;
+}
+ @keyframes go-down {
+    from{
+        transform: translatey(-25px);
+        opacity: 0;
+    }
+    to{
+        transform: translatey(0);
+        opacity: 100%;
+    }
+}
+.softSkills{
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    border-radius: 20px;
+    height: 180px;
+    padding: 15px 0px;
+    margin: 20px;
+}
+.softSkills i{
+    color: #D97F81;
+    font-size: 50px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+.txtSoft{
+    font-size: 17px;
+    color: #D97F81;
+    font-weight: 700;
+}
+/* Hard Skills */
+.prog .txtProgress p{
+    color: #D97F81;
+    font-weight: 700;
+    text-align: left;
+}
+.prog .progress{
+    height: 20px;
+    background-color: #ffffff;
+    position: relative;
+    border-radius: 20px;
+    border: 1px solid #478CA2;
+}   
+.prog .progress .progress-bar .percentage {
+    position: absolute;
+    height: 100%;
+    left: 0;
+    background-color: #478CA2;
+    border-radius: 20px;
+    animation: progress-animation 3s ease-in 1;
+    color: #fff;
+}
+.perHtml{
+    width: 90%;
+}
+.pereCss{
+    width: 65%;
+}
+.perJs{
+    width: 40%;
+}
+.perAi{
+    width: 60%;
+}
+.perPs{
+    width: 55%;
+}
+.perVideo{
+    width: 30%;
+}
+.perIng{
+    width: 80%;
+}
+ @keyframes progress-animation {
+    0% {width: 0%;}
+       
+} 
+
+
+/* ------------Portfólio */
+/* Boxes do lado esquerdo */
+.azulPort{
+    background-color: #5BB7D4;
+    width: 60%;
+    height: 350px;
+    border-radius: 10px;
+    margin-left: 30%;
+    box-shadow: rgba(0, 0, 0, 0.10) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.txtPort{
+    width: 85%;
+    height: 480px;
+    background-color: #478CA2;
+    padding: 60px 30px 0 100px;
+    color: white;
+    border-radius: 10px;
+    margin-left: -50px;
+    margin-top: -300px;
+    box-shadow: rgba(0, 0, 0, 0.10) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.txtPort h2{
+    font-size: 50px;
+    margin-left: 10%;
+}
+.txtPort p{
+    color: #89bcce;
+    font-size: 16px;
+}
+.txtPort a{
+    padding: 7px 18px;
+    border-radius: 5px;
+    color: white;
+    border: 1px solid rgb(255, 255, 255);
+    margin-left: 30%;
+    font-weight: 700;
+}
+ .txtPort a:hover{
+   background-color: white;
+   color: #478CA2;
+   transition: all 0.3s;
+   text-decoration: none; 
+}
+/* carrousel de imagens */
+.carousel{
+    max-width: 1000px;
+    width: 100%;
+    margin-left: 30px;
+    box-shadow: rgba(0, 0, 0, 0.10) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    border-radius: 10px;
+}
+.carousel a span{
+    text-decoration: none;
+    background-color: transparent;
+
+}
+.carousel a span i{
+    color: white;
+    font-size: 30px;
+}
+.carousel a:hover{
+    text-decoration: none;
+}
+.carousel a h5{
+    color: #ffffff;
+}
+.carousel a h5:hover{
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+.carousel p{
+    color: rgba(255, 255, 255, 0.61);
+    width: 100%;
+}
+
+
+/* ------------Contato */
+/* Formulário de contato */
+.cont{
+    background-color: #D97F81;
+    height: 500px;
+    padding: 30px;
+}
+.formCont{
+    float: left;
+    background-color: #fff;
+    margin-right: 30px;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    padding: 70px 40px;
+    width: 50%;
+    height: 600px;
+    box-shadow: rgba(0, 0, 0, 0.10) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    margin-top: -210px;
+}
+.formCont form label{
+    color: #D97F81;
+}
+.formCont form input{
+    width: 100%;
+    height: 30px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid #D97F81;
+    padding: 0 15px;
+    outline: none;
+}
+.formCont form textarea{
+    resize: none;
+    padding: 15px;
+    width: 100%;
+    border: 2px solid #D97F81;
+    height: 150px;
+    outline: none;
+    border-radius: 10px;
+}
+.formCont form .button{
+    background-color: transparent;
+    border-radius: 5px;
+    color: #D97F81;
+    border: 1px solid #D97F81;
+    font-weight: 700;
+    cursor: pointer;
+    width: 30%;
+    margin-left: 30%;
+}
+.formCont form .button:hover{
+    background-color: #D97F81;
+    color: #ffffff;
+    transition: all 0.5s;
+}
+/* Contatos Whats e Email */
+.txtCont{
+    margin-left: 60%;
+    color: white;
+    float: right;
+    margin-right: 80px;
+}
+.txtCont h2{
+    font-size: 50px;
+}
+.contatos{
+    text-align: left;
+    font-size: 20px;
+}
+.contatos a{
+    color: white;
+    text-decoration: none;
+    padding: 7px 18px;
+    border-radius: 20px;
+}
+.contatos a:hover{
+    background-color: white;
+    color: #D97F81;
+    text-decoration: none;
+    transition: all 0.8s;
+}
+.contatos a .iconCont{
+    margin-right: 10px;
+    font-size: 25px;
+    margin-top: 5px;
+}
+
+/* RESPONSIVIDADE */
+
+@media screen and (max-width:1100px){
+    /* ------------Sobre mim */
+    .sobreMim{
+        background-color: #F3F3F3;
+        width: 100%;
+        padding: 180px 0 0 5%;
+        height: 650px;
+        }
+    .boxAzulEscuro{
+        width: 75%;
+    }
+    .imgJennifer img{
+        margin: -400px 0 0 6%;
+        border-radius: 15px;
+        width: 350px;
+        height: auto;
+    }
+}
+
+@media screen and (max-width:767px){
+
+    /* ------------Sobre mim */
+    .sobreMim{
+        background-color: #478CA2;
+        height: 360px;
+        padding: 0;
+    }
+    .boxAzul{
+        display: none;
+    }
+    .boxAzulEscuro{
+        width: 100%;
+        height:0;
+        margin: 0;
+        background-color: transparent;
+        box-shadow: none;        
+    }
+    .imgJennifer img{
+        display: none;
+    }
+    .txtSobre{
+        float: left;
+        margin: 30px 0;
+        padding: 15px;
+    }
+    .txtSobre h1{
+        font-size: 30px;
+        margin-top: 50px;
+    }
+    .txtSobre p{
+        font-size: 14px;
+    }
+    .txtSobre a{
+        padding: 5px 12px;
+        font-size: 16px;
+        float: left;
+        margin-top: -22px;
+        background-color: white;
+        color: #478CA2;
+    }
+    /* ------------Habiliades */
+    /* Abas do menu */
+    .menuAbas{
+        margin-top: 100px;
+        z-index: -999;
+        height: auto;
+    }
+    .conteudosAbas{
+        padding: 0;
+    }
+    .linha1, .linha2{
+        padding-left: 0;
+    }
+    .nav-tabs li .btnSoft{
+        float: left;
+        margin-left: 30px;
+    }
+    .nav-tabs li .btnHard{
+        float: right;
+        margin-right: 30px;
+        margin-top: -30px;
+    }
+    .prog .txtProgress {
+        margin-top: 15px ;
+    }
+    
+    /* ------------Portfólio */
+    /* Boxes do lado esquerdo */
+    .azulPort{
+        width: 92%;
+        height: 370px;
+        margin-left: -25px;
+    }
+    .txtPort{
+        width: 90%;
+        height: 370px;
+        padding: 30px 20px 0 100px;
+        margin: -330px 0 50px -50px;
+    }
+    .txtPort h2{
+        margin-left: 0;
+    }
+    .txtPort p{
+        font-size: 16px;
+    }
+    .txtPort a{
+        padding: 5px 12px;
+        font-size: 16px;
+        background-color: white;
+        color: #478CA2;
+    }
+    /* carrousel de imagens */
+    .carousel{
+        margin-left: 8px;      
+    }
+
+    /* ------------Contato */
+    /* Formulário de contato */
+    .cont{
+        height: 600px;
+    }
+    .formCont{
+        float: none;
+        padding: 70px 40px;
+        width: 100%;
+        margin: -780px 0 0 0;
+    }
+    .formCont form button{
+        background-color: #D97F81;
+        color: #ffffff;
+    }
+    /* Contatos Whats e Email */
+    .txtCont{
+        float: none;
+        margin-left: 0;
+        text-align: center;
+        margin-right: 0;
+    }
+    .txtCont h2{
+        font-size: 40px;
+    }
+    .contatos{
+        text-align: left;
+        font-size: 20px;
+        margin-top: 100%;
+    }
+    .contatos a{
+        color: #707070;
+        font-size: 17px;
+    }
+    .contatos .emailCont{
+        float: right;
+        margin-top: -70px;
+    }
+
+    .contatos a .iconCont{
+        font-size: 19px;
+    }
+
+}
+
+@media screen and (max-width:600px){
+    /* ------------Sobre mim */
+    .sobreMim{
+        height: 430px;
+    }
+    /* ------------Habiliades */
+    #hard{
+        padding: 0 10px 0 25px;
+    }
+    /* ------------Portfólio */
+    .azulPort{
+        height: 385px;
+    }
+    .txtPort{
+        height: 385px;
+        margin-top: -350px;
+    }
+    /* ------------Contato */
+    /* Formulário de contato */
+    .cont{
+        height: 200px;
+    }
+    .formCont{
+        margin: 0;
+        display: none;
+    }
+    /* Contatos Whats e Email */
+    .contatos{
+        margin: -25px 0 0 0;
+    }
+    .txtCont h2{
+        font-size: 33px;
+    }
+    .contatos a{
+        background-color: none;
+        color: white;
+    }
+    .contatos a:hover{
+        background-color: #D97F81;
+        color: white;
+    }
+    .contatos .emailCont{
+        float: left;
+        margin: -15px 0;
+    }
+}
+
+@media screen and (max-width:470px){
+    /* ------------Portfólio */
+    .azulPort{
+        height: 430px;
+    }
+    .txtPort{
+        height: 430px;
+        margin-top: -400px;
+    }
+    /* Contatos Whats e Email */
+    .contatos{
+        font-size: 12px;
+    }
+    .contatos a{
+        padding: 0;
+    }
+}

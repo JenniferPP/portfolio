@@ -1,399 +1,573 @@
+<!-- Olá, como vai?
+
+Agora irei apresentar todo meu código para meu site! -->
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JP Designer</title>
+    <title>Jennifer Peixoto</title>
+    <!-- favicon -->
     <link rel="icon" type="image/x-icon" href="./src/img/logo/favicon.png">
-    <!--CSS-->
+    <!-- Styles do CSS -->
     <link rel="stylesheet" href="./css/index.css">
-    <!--CSS do Bootstrap-->
+    <!-- Agora irei colocar os CDN do Bootstrap! -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <!--Box Icons Font CDN LINK-->
-    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
-    <!--Font Waesome Font CDN LINK-->
+    <!--Font Font Awesome CDN LINK para ícones-->
     <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
 </head>
 <body>
-
-    <!--Menu-->
-    <header>
-        <nav class="menu">
-            <div class="logoTopo">
-                <!-- Logo JP Desingner -->
-                <a href="index.html">
-                    <img src="./src/img/logo/LOGO-100X .png" alt="JP-Designer">
-                </a>
-            </div>
-            <input type="checkbox" id="check">
-            <label for="check">
-                <i class="fas fa-bars" id="openMenu"></i>
-                <i class="fas fa-times" id="closeMenu"></i>
-            </label>
-            <div class="bgSidebar"></div>
-            <!-- Sidebar -->
-            <div class="sidebar">
-                <br><br><br>
-                <!-- Foto Jennifer -->
-                <div class="foto_eu">
-                    <img src="./src/img/jennifer-quadrada.png" alt="Jennifer Peixoto" width="150x" height="150px">
-                </div>
-                <br>
-                <!-- Linkedin, github e Instagram -->
-                <div class="contatos_midias">
-                    <a href="https://www.linkedin.com/in/jennifer-peixoto" class="linkedin" rel="noreferrer noopener" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="https://github.com/JenniferPP" class="github" rel="noreferrer noopener" target="_blank"><i class="fab fa-github"></i></a>
-                </div>
-                <br>
-                <!-- Menu de links -->
-                <div class="links">
-                    <ul>
-                        <li><a href="#sobre"><i class="fas fa-user"></i>Sobre mim</a></li>
-                        <li><a href="#habilidades"><i class="fas fa-brain"></i>Habilidades</a></li>
-                        <li><a href="#portfolio"><i class="fas fa-folder"></i>Portfólio</a></li>
-                        <li><a href="#contato"><i class="fas fa-phone-alt"></i>Contato</a></li>
-                    </ul>
-                </div>
-                <div class="email">
-                    <a href="mailto:jenni-pp@hotmail.com">jenni-pp@hotmail.com</a>
-                </div>  
-            </div>
-        </nav>
-    </header>
-
-    <!--Sobre mim-->
-    <section id="sobre">
-        <div class="sobreMim">
-            <!-- Box azul claro -->
-            <div class="boxAzul"></div>
-            <!-- Box azul escuro -->
-            <div class="boxAzulEscuro boxTxt ">
-                <!-- Texto sobre mim -->
-                <div class="txtSobre">
-                    <h1>Hello, eu sou <br>
-                        Jennifer Peixoto
-                    </h1>
-                    <br>
-                    <p>
-                        Olá, tudo bem? Me chamo Jennifer Peixoto Palmeira, tenho 21 anos, moro em São Paulo - SP. Tenho mais de 2 anos de experiência como Designer Digital e dentro da área de Marketing.
-                        Busco sempre evoluir e entregar o melhor!
-                    </p>
-                    <br> <br>
-                    <!-- Botão de download -->
-                    <a href="./src/JENNIFER_PEIXOTO_PALMEIRA.pdf" download="JENNIFER_PEIXOTO_PALMEIRA.pdf">Baixar CV</a>
-                </div>
-            </div>
-            <!-- Minha foto -->
-             <div class="imgJennifer">
-                <img src="./src/img/jennifer.jpg" alt="Jennifer Peixoto"height="480px">
-            </div>
-        </div>
-    </section>
-
-    <br><br>
-
-    <!-- Minhas habilidades -->
-    <section id="habilidades">
-        <!-- Menu em abas -->
-        <div class="menuAbas content">
-            <ul class="nav nav-tabs row mr-0">
-                <!-- Soft Skills -->
-                <li class="active col-md-6">
-                    <a data-toggle="tab" href="#soft" class="btnSkills btnSoft active">Soft Skills</a>
-                </li>
-                <!-- Hard Skills -->
-                <li class="col-md-6">
-                    <a data-toggle="tab" href="#hard" class="btnSkills btnHard">Hard Skills</a>
-                </li>
-              </ul>
-            <!-- Conteúdos do menu de abas -->
-            <div class="conteudosAbas tab-content container">
-                <!-- Conteúdo Soft Skills -->
-                <div id="soft" class="tab-pane face in active">
-                    <!-- Primeira linha -->
-                    <div class="linha1 row mr-0">
-                        <!-- Comunicação -->
-                        <div class="comunicacao softSkills col-md-3">
-                            <i class="fa fa-comment iconSoft"></i>
-                            <br>
-                            <p class="txtSoft">Comunicação</p>
-                        </div>
-                        <!-- Trabalho em equipe -->
-                        <div class="trabEquipe softSkills col-md-3">
-                            <i class="fa fa-handshake iconSoft"></i>
-                            <br>
-                            <p class="txtSoft">Trabalho em equipe</p>
-                        </div>
-                        <!-- Organização -->
-                        <div class="organizacao softSkills col-md-3">
-                            <i class="fa fa-suitcase iconSoft"></i>
-                            <br>
-                            <p class="txtSoft">Organização</p>
-                        </div>
-                    </div>
-                    
-                    <!-- Segunda linha -->
-                    <div class="linha2 row mr-0">
-                        <!-- Flexibilidade -->
-                        <div class="softSkills col-md-4">
-                            <i class="fa fa-solid fa-check"></i>
-                            <br>
-                            <p class="txtSoft">Flexibilidade</p>
-                        </div>
-                        <!-- Proatividade -->
-                        <div class="softSkills col-md-4">
-                            <i class="fa fa-solid fa-gear"></i>
-                            <br>
-                            <p class="txtSoft">Proatividade</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Conteúdo Hard Skills -->
-                <div id="hard" class="tab-pane face">
-
-                    <div class="barrasProgress">
-                        <!-- HTML -->
-                        <div class="prog html row mr-0">
-                            <div class="txtProgress col-md-2">
-                                <p>HTML</p>
-                            </div>
-                            <div class="progress col-md-10">
-                                <div class="progress-bar">
-                                    <span class="percentage perHtml">90%</span>
-                                </div>
-                            </div>
-                        </div>
-                        <br>
-                        <!-- CSS -->
-                        <div class="prog css row mr-0">
-                            <div class="txtProgress col-md-2">
-                                <p>CSS</p>
-                            </div>
-                            <div class="progress col-md-10">
-                                <div class="progress-bar" >
-                                    <span class="percentage pereCss">65%</span>
-                                </div>
-                            </div>
-                        </div>
-                        <br>
-                        <!-- Java Script -->
-                        <div class="prog js row mr-0">
-                            <div class="txtProgress col-md-2">
-                                <p>Java Script</p>
-                            </div>
-                            <div class="progress col-md-10">
-                                <div class="progress-bar" >
-                                    <span class="percentage perJs">40%</span>
-                                </div>
-                            </div>
-                        </div>
-                        <br>
-                        <!-- Illustrator -->
-                        <div class="prog ai row mr-0">
-                            <div class="txtProgress col-md-2">
-                                <p>Illustrator</p>
-                            </div>
-                            <div class="progress col-md-10">
-                                <div class="progress-bar" >
-                                    <span class="percentage perAi">60%</span>
-                                </div>
-                            </div>
-                        </div>
-                        <br>
-                        <!-- Photoshop -->
-                        <div class="prog ps row mr-0">
-                            <div class="txtProgress col-md-2">
-                                <p>Photoshop</p>
-                            </div>
-                            <div class="progress col-md-10">
-                                <div class="progress-bar" >
-                                    <span class="percentage perPs">55%</span>
-                                </div>
-                            </div>
-                        </div>
-                        <br>
-                        <!-- Edição de vídeo -->
-                        <div class="prog video row mr-0">
-                            <div class="txtProgress col-md-2">
-                                <p>Edição de vídeo</p>
-                            </div>
-                            <div class="progress col-md-10">
-                                <div class="progress-bar" >
-                                    <span class="percentage perVideo">30%</span>
-                                </div>
-                            </div>
-                        </div>
-                        <br>
-                        <!-- Inglês -->
-                        <div class="prog ingles row mr-0">
-                            <div class="txtProgress col-md-2">
-                                <p>Inglês</p>
-                            </div>
-                            <div class="progress col-md-10">
-                                <div class="progress-bar" >
-                                    <span class="percentage perIng">80%</span>
-                                </div>
-                            </div> 
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <br><br><br><br>
     
-    <!-- Portfólio -->
-    <section id="portfolio">
-        <div class="port row mr-0">
-            <!-- Box Azul escuro portfolio -->
-            <div class="portfolio col-md-5">
-                <div class="azulPort"></div>
-                <div class="txtPort">
-                    <h2>Portfólio</h2>
-                    <br><br>
-                    <p>Veja alguns projetos que venho desenvolvendo ao longo dos anos! <br>
-                        <br>
-                        Para ver mais projetos que desenvolvi, clique no botão abaixo;) 
-                    </p>
-                    <br><br>
-                    <a href="./portfolio.html">Ver mais</a>
+    <!-- Cabeçalho do site -->
+    <div class="menu menu-desktop row">
+            <!-- Logo do menu -->
+            <div class="col-md-2 logo-menu">
+                <a href="index.html" class="logo-menu" ><img src="./src/img/logo/LOGO-100X-branco.png" alt="jennifer-peixoto-logo" ></a>
+            </div>
+            <!-- Menu de links -->
+            <div class="col-md-7 links-menu">
+                <nav class="main-menu navbar">
+                    <ul>
+                        <li><a href="#sobre-mim" class="sobre-link ">Sobre mim</a></li>
+                        <li><a href="#servicos" class="servicos-link">Serviços</a></li>
+                        <li><a href="#portfolio" class="portfolio-link">Portfólio</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- Botão de contato do Menu -->
+            <div class="col-md-3 contato-menu ">
+                <a href="https://api.whatsapp.com/send?phone=5511961794807&text=Ol%C3%A1%20Jennifer,%20tudo%20bem?%20Entrei%20no%20seu%20site%20e%20quero%20criar%20algo%20incr%C3%ADvel%20com%20voc%C3%AA!" class="contato-link float-end">Entrar em Contato</a>
+            </div>
+    </div>  
+        
+    <!-- Menu Mobile -->
+    <div class="menu-mobile">
+        <!--Navbar-->
+<nav class="navbar navbar-light navbar-1 white">
+
+    <!-- Navbar brand -->
+    <a href="index.html" class="logo-menu navbar-brand" ><img src="./src/img/logo/LOGO-100X-branco.png" alt="jennifer-peixoto-logo" ></a>
+  
+    <!-- Collapse button -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-mobile"
+      aria-controls="navbarSupportedContent15" aria-expanded="false" aria-label="Toggle navigation"><span class=><i class="fa fa-solid fa-bars"></i></span></button>
+  
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbar-mobile">
+  
+      <!-- Links -->
+      <ul class="navbar-nav mr-auto">
+        <li><a href="#sobre-mim" class="sobre-link ">Sobre mim</a></li>
+        <li><a href="#servicos" class="servicos-link">Serviços</a></li>
+        <li><a href="#portfolio" class="portfolio-link">Portfólio</a></li>
+      </ul>
+      <!-- Links -->
+  
+    </div>
+    <!-- Collapsible content -->
+  
+  </nav>
+  <!--/.Navbar-->
+    </div>
+    
+
+    <!-- Topo da página. Seção antes da primeira dobra -->
+    <section class="topo-site">
+        <div class="row">
+            <!-- lado esquerdo / informações sobre minha carreira -->
+            <div class="col-md-7 apresentacao">
+                <p><span style="color:var(--azul-claro)">Hello,</span> eu sou a<br>
+                    <h1>Jennifer Peixoto</h1><br>
+                    <div class="img-mobile">
+                        <img src="./src/img/jennifer-peixoto-web-designer.png" alt="Jennifer Peixoto, Designer Digital" height="auto" width="350px">
+                    </div>
+                    <h2>Designer UX/UI, Web e Gráfico</h2>
+                </p>
+                <p class="experiencia_text">Mais de 2 anos de experiência como Designer Digital, e dentro de área de Marketing. Busco sempre evoluir e entregar o melhor!</p>
+                <div class="buttons">
+                    <a href="https://api.whatsapp.com/send?phone=5511961794807&text=Ol%C3%A1%20como%20vai%3F%20Eu%20entrei%20no%20seu%20site%20e%20gostaria%20de%20saber%20um%20pouco%20mais%20sobre..." class="btn_contato-topo">Entrar em contato</a>
+                    <a href="src/Jennifer Peixoto Palmeira.pdf" download class="btn_cv">Baixar CV</a>
+                </div>
+                <!-- Icones das minhas mídias -->
+                <div class="midias">
+                    <a href="https://www.linkedin.com/in/jennifer-peixoto/" target="_blank"><i class="fa-brands fa fa-linkedin"></i></a>
+                    <a href="https://github.com/JenniferPP" target="_blank"><i class="fa-brands fa fa-github"></i></a>
                 </div>
             </div>
-            <!-- Carrousel -->
-            <div class="carrousel col-md-6">
-                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-                    <ol class="carousel-indicators">
-                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
-                      </ol>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <a href="https://drive.google.com/file/d/1_jpJ_fI7eSu6292BBKsKqQ_jHTH14gpx/view?usp=sharing" rel="noreferrer noopener" target="_blank">
-                                <img class="d-block w-100" src="./src/img/portifolio/diario_missao-CAPA.png">
-                            </a>
-                            <div class="carousel-caption d-none d-md-block">
-                                <a href="https://drive.google.com/file/d/1_jpJ_fI7eSu6292BBKsKqQ_jHTH14gpx/view?usp=sharing" rel="noreferrer noopener" target="_blank">
-                                    <h5>Diário de missão</h5>
-                                </a>
-                                <p>Produção: Podcast</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <a href="https://jenniferpp.github.io/tcc-ios//paginas/Home/index.html" rel="noreferrer noopener" target="_blank">
-                                <img class="d-block w-100" src="./src/img/portifolio/animec-CAPA.png" alt="Front-End">
-                            </a>
-                            <div class="carousel-caption d-none d-md-block">
-                                <a href="https://jenniferpp.github.io/tcc-ios//paginas/Home/index.html" rel="noreferrer noopener" target="_blank">
-                                    <h5>AnimeC</h5>
-                                </a>
-                                <p>Produção: E-commerce de roupas</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <a href="https://drive.google.com/file/d/1_dfjdOLRaxuMpMmGVBEvYz66BMua0Xkr/view?usp=sharing" rel="noreferrer noopener" target="_blank">
-                                <img class="d-block w-100" src="./src/img/portifolio/vitoriaPiropo-CAPA.png" >
-                            </a>
-                            <div class="carousel-caption d-none d-md-block">
-                                <a href="https://drive.google.com/file/d/1_dfjdOLRaxuMpMmGVBEvYz66BMua0Xkr/view?usp=sharing" rel="noreferrer noopener" target="_blank">
-                                    <h5>Vitória Piropô</h5>
-                                </a>
-                                <p>Produção: Designer sobrancelhas</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <a href="https://drive.google.com/file/d/1ZMtscbmZfxXLhRe9qW6-SwgUpDHEiE_b/view?usp=sharing" rel="noreferrer noopener" target="_blank">
-                                <img class="d-block w-100" src="./src/img/portifolio/esquadraoTECH-CAPA.png" alt="WEB Design">
-                            </a>
-                            <div class="carousel-caption d-none d-md-block">
-                                <a href="https://drive.google.com/file/d/1ZMtscbmZfxXLhRe9qW6-SwgUpDHEiE_b/view?usp=sharing" rel="noreferrer noopener" target="_blank">
-                                    <h5>Esquadrão TECH</h5>
-                                </a>
-                                <p>Produção: Grupo de empregabilidade</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <a href="https://www.figma.com/proto/JYUT2AdB352WY9DumahLBe/Aplicativo-Psicologia?node-id=1%3A2&scaling=scale-down&page-id=0%3A1&starting-point-node-id=1%3A2" rel="noreferrer noopener" target="_blank">
-                                <img class="d-block w-100" src="./src/img/portifolio/lacos_ajuda-CAPA.png" alt="Figma">
-                            </a>
-                            <div class="carousel-caption d-none d-md-block">
-                                <a href="https://www.figma.com/proto/JYUT2AdB352WY9DumahLBe/Aplicativo-Psicologia?node-id=1%3A2&scaling=scale-down&page-id=0%3A1&starting-point-node-id=1%3A2" rel="noreferrer noopener" target="_blank">
-                                    <h5>Laços de Ajuda</h5>
-                                </a>
-                                
-                                <p>Produção: Prototipagem de aplicativo </p>
-                            </div>
-                        </div>
-                    </div>
-                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                        <span aria-hidden="true">
-                            <i class='bx bxs-caret-left-circle' ></i>
-                        </span>
-                    </a>
-                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                        <span class="" aria-hidden="true">
-                            <i class='bx bxs-caret-right-circle' ></i>
-                        </span>
-                    </a>
-                  </div>
+
+            <!-- Lado direito / Minha foto de apresentação -->
+            <div class="col-md-5 jennifer">
+                <img src="./src/img/jennifer-peixoto-web-designer.png" alt="Jennifer Peixoto, Designer Digital" height="auto" width="500px">
             </div>
         </div>
     </section>
 
-    <br><br><br><br>
-
-     <section id="contato">
-         <div class="cont">
-            <div class="txtCont">
-                <h2>Bora conversar?</h2>
-                <br><br>
-                <div class="contatos">
-                    <a href="https://api.whatsapp.com/send?phone=5511961794807" rel="noreferrer noopener" target="_blank" class="whatsCont"><i class="fab fa-whatsapp iconCont"></i>(11) 96179-4807</a>
-                    <br><br>
-                    <a href="mailto:jenni-pp@hotmail.com" class="emailCont"><i class="far fa-envelope iconCont"></i>jenni-pp@hotmail.com.br</a>
+    <!-- O resumo de minha jornada e experiencia -->
+    <section id="sobre-mim" class="container">
+        <div class="row">
+            <div class="col-md-12 minha-jornada">
+                <p>Sobre mim</p>
+                <h2>Minha Jornada</h2>
+                <p class="sobre-txt">Minha jornada se inicia com uma garota cursiosa e sedenta por conheimento, que acidentalmente se achou dentro da área de Tecnologia e Desing. Já passei por diversos desafios e aprendi muito,
+                    e des de 2018 sinto que venho evoluindo de forma exponencial. 
+                </p>
+                <div class="experiencia-anos row">
+                    <div class="anos-trabalho col-6">
+                        <p class="anos-desktop"><span>+3 </span>anos de experiência</p>
+                        <!-- <p class="anos-mobile"><span><br>4 </span>anos de experiência</p> -->
+                    </div>
+                    <div class="quant-projetos col-6">
+                        <p class="anos-desktop"><span>+10 </span>projetos realizados</p>
+                        <!-- <p class="anos-mobile"><span>+10<br></span>projetos realizados</p> -->  
+                    </div>
                 </div>
-             </div>
-             <div class="formCont">
-                <form action="https://api.staticforms.xyz/submit" method="post" class="formulario">
-                    <!-- Replace with accesKey sent to your email -->
-                    <input type="hidden" name="accessKey" value="ff2151a8-1d02-4e2a-b24c-b157172ce647">
+            </div>
+        </div>
+    </section>
 
-                    <label for="name">Nome:</label><br>
-                    <input type="text" id="name" name="name">
+    <!-- Todos os serviços que presto como Designer -->
+    <section id="servicos">
+        <p>Meus Serviços</p>
+        <h2>O que faço</h2>
+        <div class="o-que-faco row">
+            <div class="col-md-3 ux-ui servico">
+                <i class="fa-thin fa fa-code"></i>
+                <h3>Designer UX/UI</h3>
+                <p>Desenvolvimento de Interfaces para sites, aplicativos e e-commerces. </p>
+            </div>
+            <div class="col-md-3 web-desirgner servico">
+                <i class="fa-solid fa fa-desktop"></i>
+                <h3>Designer Web</h3>
+                <p>Criação de peças gráficas para sites, mídias sociais, campanhas, ADS e lançamentos.</p>
+            </div>
+            <div class="col-md-3 designer-grafico servico">
+                <i class="fa-thin fa fa-pencil"></i>
+                <h3>Designer Gráfico</h3>
+                <p>Desenvolvimento de logos, branding e peças gráficas para impressões.</p>
+            </div>
+        </div>
+    </section>
 
-                    <br><br><br>
+    <!-- Todos projetos que desenvolvi na minha carreira. Meu portfólio -->
+    <section id="portfolio">
+        <div class="row">
+            <div class="col-md-12 projetos">
+                <p>Portfólio</p>
+                <h2>Meus Projetos</h2>
+            </div>
+        </div>
+        <div>
+           
+        <!-- Carousel Multi Itens Desktop -->
+        <div class="row">
+            <div class="row carousel-desck">
+                <div class="col-md-12">
+                    <div id="carousel-mult" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel-mult" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel-mult" data-slide-to="1"></li>
+                            <li data-target="#carousel-mult" data-slide-to="2"></li>
+                            <li data-target="#carousel-mult" data-slide-to="3"></li>
+                            <li data-target="#carousel-mult" data-slide-to="4"></li>
+                        </ol>
+    
+                        <!-- Carousel items -->
+                        <div class="carousel-inner">
 
-                    <label for="email">E-mail:</label><br>
-                    <input type="text" id="email" name="email">
+                            <div class="carousel-item active">
+                                    <div class="row">
 
-                    <br><br><br><br>
+                                        <!-- Slider 1 -->
+                                        <div class="col-md-4">
+                                            <a href="https://alianjoiasoficial.com.br/">
+                                                <img src="src/img/portifolio/ecommerce-alian-joias.jpg"alt="Ecommerce de Joias e Alianças - Alian Joias" style="max-width:100%;">
+                                            </a>
+                                            <div class="carousel-caption d-none d-md-block">
+                                                <a href="https://alianjoiasoficial.com.br/" target="_blank">
+                                                    <p>Ecommerce de Joias e Alianças - Alian Joias</p>
+                                                </a>
+                                                    <p class="servico">Design UX/UI</p>
+                                            </div>
+                                        </div>
 
-                    <textarea name="message" id="mensagem" placeholder="Mensagem..."></textarea>
+                                        <!-- Slider 2 -->
+                                        <div class="col-md-4">
+                                            <a href="https://vivadeleiloes.com.br/">
+                                                <img src="src/img/portifolio/lading-page-viva-de-leiloes.jpg"alt="Landing Page de Captação de Leads para Whatsapp - Viva de Leilões" style="max-width:100%;">
+                                            </a>
+                                            <div class="carousel-caption d-none d-md-block">
+                                                <a href="https://vivadeleiloes.com.br/" target="_blank">
+                                                    <p>Landing Page de Captação de Leads para Whatsapp - Viva de Leilões </p>
+                                                </a>
+                                                    <p class="servico">Design UX/UI</p>
+                                            </div>
+                                        </div>
 
-                    <input type="hidden" name="redirectTo" value="https://jenni-designer.netlify.app/">
-                    <br><br>
-                    <input type="submit" value="Enviar" class="button" />
-                </form>
-             </div>
-         </div>
-     </section>
+                                         <!-- Slider 3 -->
+                                         <div class="col-md-4">
+                                            <a href="https://cpmconcurso.com.br/">
+                                                <img src="src/img/portifolio/site-instucional-cpm-concursos.jpg"alt="Site Institucional - CPM Concurso / Paulo Machado" style="max-width:100%;">
+                                            </a>
+                                            <div class="carousel-caption d-none d-md-block">
+                                                <a href="https://cpmconcurso.com.br/" target="_blank">
+                                                    <p>Site Institucional - CPM Concurso / Paulo Machado</p>
+                                                </a>
+                                                    <p class="servico">Design UX/UI</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--.row-->
+                            </div>
+                            <!--.item-->
+    
+                            <div class="carousel-item">
+                                    <div class="row">
+                                        <!-- Slider 4 -->
+                                        <div class="col-md-4">
+                                            <a href="https://ead.cpmconcurso.com.br/">
+                                                <img src="src/img/portifolio/plataforma-ead-professor-paulo-machado.jpg"alt="Plataforma EAD - CPM Concurso / Paulo Machado" style="max-width:100%;">
+                                            </a>
+                                            <div class="carousel-caption d-none d-md-block">
+                                                <a href="https://ead.cpmconcurso.com.br/" target="_blank">
+                                                    <p>Plataforma EAD - CPM Concurso / Paulo Machado </p>
+                                                </a>
+                                                    <p class="servico">Design UX/UI</p>
+                                            </div>
+                                        </div>
 
-     
+                                        <!-- Slider 5 -->
+                                        <div class="col-md-4">
+                                            <a href="https://virtiscar.com.br/">
+                                                <img src="src/img/portifolio/site-de-carros-virtiscar.jpg"alt="Site de Carros - Virtiscar" style="max-width:100%;">
+                                            </a>
+                                            <div class="carousel-caption d-none d-md-block">
+                                                <a href="https://virtiscar.com.br/" target="_blank">
+                                                    <p>Site de Carros - Virtiscar</p>
+                                                </a>
+                                                    <p class="servico">Design UX/UI</p>
+                                            </div>
+                                        </div>
 
-    <!-- Arquivo JS  -->
-    <script src="./js/index.js"></script>
-    <!--Bootstrap JS-->
+                                        <!-- Slider 6 -->
+                                        <div class="col-md-4">
+                                            <a href="https://imedilife.com.br/">
+                                                <img src="src/img/portifolio/site-institucional-imedi.jpg"alt="Site de Institucional de Clínica Médica - iMEDI Life" style="max-width:100%;">
+                                            </a>
+                                            <div class="carousel-caption d-none d-md-block">
+                                                <a href="https://imedilife.com.br/" target="_blank">
+                                                    <p>Site de Institucional de Clínica Médica - iMEDI Life </p>
+                                                </a>
+                                                    <p class="servico">Design UX/UI</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--.row-->
+                            </div>
+                            <!--.item-->
+
+                            <div class="carousel-item">
+                                    <div class="row">
+                                        <!-- Slider 7 -->
+                                        <div class="col-md-4">
+                                            <a href="https://mentorwesley.com.br/blog/">
+                                                <img src="src/img/portifolio/blog-mentor-wesley-trader-esportivo.jpg"alt="Blog sobre Trader Esportivo e Investimento - Blog Black" style="max-width:100%;">
+                                            </a>
+                                            <div class="carousel-caption d-none d-md-block">
+                                                <a href="https://mentorwesley.com.br/blog/" target="_blank">
+                                                    <p>Blog sobre Trader Esportivo e Investimento - Blog Black </p>
+                                                </a>
+                                                    <p class="servico">Design UX/UI</p>
+                                            </div>
+                                        </div>
+
+                                        <!-- Slider 8 -->
+                                        <div class="col-md-4">
+                                            <a href="https://colchoestecnologicos.com/">
+                                                <img src="src/img/portifolio/landing-page-haiflex-colchoes.jpg"alt="Página de Venda para Colchões Tecnológicos - Haiflex" style="max-width:100%;">
+                                            </a>
+                                            <div class="carousel-caption d-none d-md-block">
+                                                <a href="https://colchoestecnologicos.com/" target="_blank">
+                                                    <p>Página de Venda para Colchões Tecnológicos - Haiflex</p>
+                                                </a>
+                                                    <p class="servico">Design UX/UI</p>
+                                            </div>
+                                        </div>
+
+                                        <!-- Slider 9 -->
+                                        <div class="col-md-4">
+                                            <a href="https://malibrasilreversa.com.br/">
+                                                <img src="src/img/portifolio/site-institucional-mali-brasil-reversa-case-real.jpg"alt="Site de Institucional - Mali Brasil Reversa " style="max-width:100%;">
+                                            </a>
+                                            <div class="carousel-caption d-none d-md-block">
+                                                <a href="https://malibrasilreversa.com.br/" target="_blank">
+                                                    <p>Site de Institucional - Mali Brasil Reversa </p>
+                                                </a>
+                                                    <p class="servico">Design Gráfico</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--.row-->
+                            </div>
+                            <!--.item-->
+
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <!-- Slider 10 -->
+                                    <div class="col-md-4">
+                                        <a href="https://www.andredintof.com.br/desafio-12-em-2">
+                                            <img src="src/img/portifolio/landing-page-de-vendas-desafio-12-em-2.jpg"alt="Desenvolvimento de identidade visual para um podcast cristão " style="max-width:100%;">
+                                        </a>
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <a href="https://www.andredintof.com.br/desafio-12-em-2" target="_blank">
+                                                <p>Página de Vendas para André Dintoff - Desafio 12 em 2</p>
+                                            </a>
+                                                <p class="servico">Design UX/UI</p>
+                                        </div>
+                                    </div>
+
+                                    <!-- Slider 11 -->
+                                    <div class="col-md-4">
+                                        <a href="https://www.andredintof.com.br/grupo-whatsapp">
+                                            <img src="src/img/portifolio/landing-page-de-captura-desafio-12-em-2.jpg"alt="Desenvolvimento de identidade visual para um grupo de empregabilidade" style="max-width:100%;">
+                                        </a>
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <a href="https://www.andredintof.com.br/grupo-whatsapp" target="_blank">
+                                                <p>Landing Page de Captação de LEADS para Whatsapp - Upgrade André Dintoff</p>
+                                            </a>
+                                                <p class="servico">Design Gráfico</p>
+                                        </div>
+                                    </div>
+
+                                    <!-- Slider 12 -->
+                                    <div class="col-md-4">
+                                        <a href="https://drive.google.com/file/d/1_dfjdOLRaxuMpMmGVBEvYz66BMua0Xkr/view?usp=sharing">
+                                            <img src="src/img/portifolio/logo-designer-de-sobrancelha-vitoria-piropo.jpg"alt="Desenvolvimento de identidade visual para designer de sobrancelhas" style="max-width:100%;">
+                                        </a>
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <a href="https://drive.google.com/file/d/1_dfjdOLRaxuMpMmGVBEvYz66BMua0Xkr/view?usp=sharing" target="_blank">
+                                                <p>Desenvolvimento de identidade visual para designer de sobrancelhas </p>
+                                            </a>
+                                                <p class="servico">Design Gráfico</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--.row-->
+                            </div>
+                            <!--.item-->
+
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <!-- Slider 13 -->
+                                    <div class="col-md-4">
+                                        <a href="https://drive.google.com/file/d/1_jpJ_fI7eSu6292BBKsKqQ_jHTH14gpx/view?usp=sharing">
+                                            <img src="src/img/portifolio/podcast-diario-de-missao.jpg"alt="Desenvolvimento de identidade visual para um podcast cristão " style="max-width:100%;">
+                                        </a>
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <a href="https://drive.google.com/file/d/1_jpJ_fI7eSu6292BBKsKqQ_jHTH14gpx/view?usp=sharing" target="_blank">
+                                                <p>Desenvolvimento de identidade visual para um podcast cristão </p>
+                                            </a>
+                                                <p class="servico">Design Gráfico</p>
+                                        </div>
+                                    </div>
+
+                                    <!-- Slider 14 -->
+                                    <div class="col-md-4">
+                                        <a href="https://colchoestecnologicos.com/">
+                                            <img src="src/img/portifolio/projeto-social-esquadrao-tec.jpg"alt="Desenvolvimento de identidade visual para um grupo de empregabilidade" style="max-width:100%;">
+                                        </a>
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <a href="https://colchoestecnologicos.com/" target="_blank">
+                                                <p>Desenvolvimento de identidade visual para um grupo de empregabilidade</p>
+                                            </a>
+                                                <p class="servico">Design Gráfico</p>
+                                        </div>
+                                    </div>
+
+                                    <!-- Slider 15 -->
+                                    <div class="col-md-4"></div>
+                                </div>
+                                <!--.row-->
+                            </div>
+                            <!--.item-->
+
+                        </div>
+                        <!--.carousel-inner-->
+                        <a class="carousel-control-prev" href="#carousel-mult" role="button" data-slide="prev">
+                            <i class="fa fa-sharp fa-solid fa-caret-left"></i>
+                            <span class="sr-only">Anterior</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carousel-mult" role="button" data-slide="next">
+                            <i class="fa fa-sharp fa-solid fa-caret-right"></i>
+                            <span class="sr-only">Próximo</span>
+                        </a>
+                    <!--.Carousel-->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Carousel Itens Mobile -->
+        <div id="carouselExampleControls" class="carousel slide carousel-mobile" data-ride="carousel">
+            <div class="carousel-inner">
+                <!-- Slider 1 -->
+                <div class="carousel-item active">
+                    <a href="https://alianjoiasoficial.com.br/">
+                        <img src="src/img/portifolio/ecommerce-alian-joias.jpg"alt="Ecommerce de Joias e Alianças - Alian Joias" style="max-width:100%;">
+                    </a>
+                    <div class="carousel-caption d-none d-md-block">
+                        <a href="https://alianjoiasoficial.com.br/" target="_blank">
+                            <p>Ecommerce de Joias e Alianças - Alian Joias</p>
+                        </a>
+                            <p class="servico">Design UX/UI</p>
+                    </div>
+                </div>
+
+                <!-- Slider 2 -->
+                <div class="carousel-item">
+                    <a href="https://vivadeleiloes.com.br/">
+                        <img src="src/img/portifolio/lading-page-viva-de-leiloes.jpg"alt="Landing Page de Captação de Leads para Whatsapp - Viva de Leilões" style="max-width:100%;">
+                    </a>
+                    <div class="carousel-caption d-none d-md-block">
+                        <a href="https://vivadeleiloes.com.br/" target="_blank">
+                            <p>Landing Page de Captação de Leads para Whatsapp - Viva de Leilões </p>
+                        </a>
+                            <p class="servico">Design UX/UI</p>
+                    </div>
+                </div>
+
+                <!-- Slider 3 -->
+                <div class="carousel-item">
+                    <a href="https://cpmconcurso.com.br/">
+                        <img src="src/img/portifolio/site-instucional-cpm-concursos.jpg"alt="Site Institucional - CPM Concurso / Paulo Machado" style="max-width:100%;">
+                    </a>
+                    <div class="carousel-caption d-none d-md-block">
+                        <a href="https://cpmconcurso.com.br/" target="_blank">
+                            <p>Site Institucional - CPM Concurso / Paulo Machado</p>
+                        </a>
+                            <p class="servico">Design UX/UI</p>
+                    </div>
+                </div>
+
+                <!-- Slider 4 -->
+                <div class="carousel-item">
+                    <a href="https://virtiscar.com.br/">
+                        <img src="src/img/portifolio/site-de-carros-virtiscar.jpg"alt="Site de Carros - Virtiscar" style="max-width:100%;">
+                    </a>
+                    <div class="carousel-caption d-none d-md-block">
+                        <a href="https://virtiscar.com.br/" target="_blank">
+                            <p>Site de Carros - Virtiscar</p>
+                        </a>
+                    <p class="servico">Design UX/UI</p>
+                    </div>
+                </div>
+
+                <!-- Slider 5 -->
+                <div class="carousel-item">
+                    <a href="https://www.andredintof.com.br/desafio-12-em-2">
+                        <img src="src/img/portifolio/landing-page-de-vendas-desafio-12-em-2.jpg"alt="Desenvolvimento de identidade visual para um podcast cristão " style="max-width:100%;">
+                    </a>
+                    <div class="carousel-caption d-none d-md-block">
+                        <a href="https://www.andredintof.com.br/desafio-12-em-2" target="_blank">
+                            <p>Página de Vendas para André Dintoff - Desafio 12 em 2</p>
+                        </a>
+                            <p class="servico">Design UX/UI</p>
+                    </div>
+                </div>
+
+                <!-- Slider 6 -->
+                <div class="carousel-item">
+                    <a href="https://colchoestecnologicos.com/">
+                        <img src="src/img/portifolio/projeto-social-esquadrao-tec.jpg"alt="Desenvolvimento de identidade visual para um grupo de empregabilidade" style="max-width:100%;">
+                    </a>
+                    <div class="carousel-caption d-none d-md-block">
+                        <a href="https://colchoestecnologicos.com/" target="_blank">
+                            <p>Desenvolvimento de identidade visual para um grupo de empregabilidade</p>
+                        </a>
+                            <p class="servico">Design Gráfico</p>
+                    </div>
+                </div>
+
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Próximo</span>
+            </a>
+        </div>
+
+        <!-- <a href="#" class="btn-portfolio">Ver todos projetos</a> -->
+    </section>
+
+    <!-- Formulário de contato para falar comigo! -->
+    <section class="form-contato container">
+        <div class="row">
+            <div class="col-md-12 formulario">
+                <h2>Me envie uma mensagem!</h2>
+                <p>Vamos criar algo incrível juntos!</p>
+            </div>
+        </div>
+
+        <!-- Formulário de contato -->
+        <!-- <form class="form-inline" method="post" action="https://formsubmit.co/jenni-pp@hotmail.com">
+            <input type="hidden" name="_subject" value="Novo envio!">
+            <input type="hidden" name="_captcha" value="false">
+            <div class="form-group mb-2">
+                <input type="text" class="form-control" name="nome" id="nome" placeholder="Insira o seu Nome" required>
+            </div>
+            <div class="form-group mx-sm-3 mb-2">
+                <input type="text" class="form-control" name="telefone" id="telefone" placeholder="Digite um número de telefone" maxlength="15" required>
+            </div>
+            <button type="submit" class="btn btn-primary mb-2 btn-enviar">Enviar</button>
+          </form> -->
+          <a href="https://api.whatsapp.com/send?phone=5511961794807&text=Ol%C3%A1%20Jennifer,%20tudo%20bem?%20Entrei%20no%20seu%20site%20e%20quero%20criar%20algo%20incr%C3%ADvel%20com%20voc%C3%AA!" class="cont-whats">Quero entrar em Contato <i class="fa-brands fa fa-whatsapp"></i></a>
+    </section>
+
+    <section class="copyright">
+        <p><i class="fa fa-solid fa-copyright"></i> JP Designer 2022 - Todos direitos reservados para Jennifer Peixoto Palmeira</p>
+    </section>
+
+    <script src="js/index.js">        
+    </script>
+
+
+    <!-- Código de Java Script para Máscara de Telefone -->
+    <script>
+        // Mascara de Telefone do formulário
+/* Máscaras ER */
+function mascara(o,f){
+    v_obj=o
+    v_fun=f
+    setTimeout("execmascara()",1)
+}
+function execmascara(){
+    v_obj.value=v_fun(v_obj.value)
+}
+function mtel(v){
+    v=v.replace(/\D/g,""); //Remove tudo o que não é dígito
+    v=v.replace(/^(\d{2})(\d)/g,"($1) $2"); //Coloca parênteses em volta dos dois primeiros dígitos
+    v=v.replace(/(\d)(\d{4})$/,"$1-$2"); //Coloca hífen entre o quarto e o quinto dígitos
+    return v;
+}
+function id( el ){
+	return document.getElementById( el );
+}
+window.onload = function(){
+	id('telefone').onkeyup = function(){
+		mascara( this, mtel );
+	}
+}
+    </script>
+
+    <!-- Java Script do Bootstrap -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
-    
 </body>
 </html>
